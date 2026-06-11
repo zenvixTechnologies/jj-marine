@@ -8,8 +8,23 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-marine-primary: #0f3d3e;
+  --color-marine-secondary: #1e6f5c;
+  --color-marine-gold: #d4af37;
+  --color-marine-gold-soft: #eed27e;
+  --color-marine-surface: #f8f9fa;
+  --color-marine-panel: #dae0dc;
+  --color-marine-panel-deep: #0d4a43;
+  --color-marine-border: rgba(255, 255, 255, 0.2);
+  --color-marine-text: #314342;
+  --font-display: "Montserrat", "Trebuchet MS", "Segoe UI", sans-serif;
+  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-sans: "Inter", "Segoe UI", Arial, sans-serif;
+  --font-mono: "SFMono-Regular", "Consolas", "Liberation Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,4 +38,64 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), Arial, Helvetica, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  border: 1px solid rgba(15, 61, 62, 0.1);
+}
+
+.horizon-gradient {
+  background: linear-gradient(135deg, #0f3d3e 0%, #1e6f5c 100%);
+}
+
+.gold-gradient {
+  background: linear-gradient(to right, #d4af37, #f1d592);
+}
+
+.service-module {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-module:hover {
+  transform: translateY(-8px);
+}
+
+.service-expand-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.service-module:hover .service-expand-btn::after {
+  width: 100%;
 }
