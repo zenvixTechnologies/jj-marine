@@ -57,7 +57,7 @@ export default function MultiCardGrid() {
           <img
             alt="Maritime Officers"
             className="absolute inset-0 h-full w-full object-cover grayscale-[20%] transition-transform duration-1000 hover:scale-105"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDseg7sonF2DVousSXNLECw4OpWpZHqQ3XiJ-Q_-zL3RMYmCEqqDxWNB6za_cZLsNbiwRugbT2YR8a9YJ18e_UR9M32Ki9ZHZYjPwnCX31KzeVWDLLzG7DpUaaJPqdmTNxPcQPZwnPfvz58D1pkHLhZ2PRasP47O4W8C8uN_MBR6KkDHohe4XPuEpIcUoS1hjl3dGlqQtdk6f3aOudskDVmnvDIz-5QFwhD6uV7JTXymdAmLjHAJhRrFxkShcA4im-t5AnQ9xuHfdE"
+            src="/images/Maritime.png"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e]/90 via-[#0f3d3e]/40 to-transparent" />
           <div className="absolute bottom-0 w-full p-10 text-white">
@@ -91,8 +91,8 @@ export default function MultiCardGrid() {
             </div>
 
             <p className="mt-6 max-w-lg text-white/70">
-            We source the world&apos;s most qualified seafarers, ensuring every
-            vessel is manned by excellence and safety-first expertise.
+              We source the world&apos;s most qualified seafarers, ensuring every
+              vessel is manned by excellence and safety-first expertise.
             </p>
           </div>
         </div>
