@@ -69,7 +69,7 @@ export default function HeroFeatureSection() {
               <img
                 alt="Logistics Control Center"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYe62d_uILiohoxbXYb5O0UdhUlNDt2q_Jgjnrfnu9xigJ-QGGxLVlfKZpN-G9sTuTw_FIpIyRlSu0Cm_o54jxyLeIdk2saWzUb47x-9RKswtskVs4hVTLY7RAvq4l-kjFili-uOLqxFmPPykurfGk5DgeBc3dyW04i3yX5yQSeJJv0CRBZXGwvgxLg-r0ycBnvlqDPdxjWb_QlYauwXsxADYJk-oNiTosxd7qCpatxaRZ6XZlQ5A4GH844MtvxH1G42a45QAWs7c"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYe62d_uILiohoxbXYb5O0UdhUlNDt2q_Jgjnrfnu9xigJ-QGGxLVlfKZpN-G9sTuTw_FIpIyRlSu0Cm_o54jxyLeIdk2saWzUb47x-9RKswtskVs4hVTLY7RAvq4l-kjFili-uOLqxFmPPykurfGk5DgeBc3dyW04i3yX5yQSeJJv0CRBZXGwvgxLg-r0ycBnvlqDPdxjWb_QlYauwXsxADYJk-oNiTosxd7qPcatxaRZ6XZlQ5A4GH844MtvxH1G42a45QAWs7c"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#0f3d3e]/40 to-transparent" />
             </div>

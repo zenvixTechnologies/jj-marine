@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import {
   ChatBubbleIcon,
@@ -15,8 +16,22 @@ export default function SiteFooter() {
       <div className="mx-auto w-full max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="space-y-5">
-            <div className="font-display text-[1.6rem] font-bold text-marine-gold">
-              JJ Marine
+            <div className="flex items-center gap-3">
+              <Image
+                src="/images/logo.jpg"
+                alt="JJ Marine Logo"
+                width={48}
+                height={48}
+                className="h-12 w-12 object-contain rounded-md shadow-sm bg-white p-0.5"
+              />
+              <div className="flex flex-col">
+                <span className="font-display text-[1.25rem] font-bold uppercase tracking-tight text-marine-gold leading-none">
+                  JJ Marine
+                </span>
+                <span className="text-[0.6rem] uppercase tracking-widest text-white/70 font-medium mt-1">
+                  Logistics & HR
+                </span>
+              </div>
             </div>
             <p className="max-w-[18rem] text-[0.92rem] leading-7 text-white/72">
               Empowering global maritime trade through strategic excellence in

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   LanguageIcon,
   PersonIcon,
@@ -12,8 +13,22 @@ export default function SiteFooter() {
     <footer className="w-full border-t border-[#1e6f5c]/20 bg-[#0f3d3e] pt-20 text-[#e7e8e8]">
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-12 px-4 md:grid-cols-4 md:px-6">
         <div className="space-y-6">
-          <div className="font-display text-[1.6rem] font-bold uppercase text-[#d4af37]">
-            JJ Marine
+          <div className="flex items-center gap-3">
+            <Image
+              src="/images/logo.jpg"
+              alt="JJ Marine Logo"
+              width={48}
+              height={48}
+              className="h-12 w-12 object-contain rounded-md shadow-sm bg-white p-0.5"
+            />
+            <div className="flex flex-col">
+              <span className="font-display text-[1.25rem] font-bold uppercase tracking-tight text-[#d4af37] leading-none">
+                JJ Marine
+              </span>
+              <span className="text-[0.6rem] uppercase tracking-widest text-[#e7e8e8]/70 font-medium mt-1">
+                Logistics & HR
+              </span>
+            </div>
           </div>
           <p className="max-w-[18rem] text-[0.88rem] leading-7 text-white/70">
             A global leader in maritime HR and logistics, committed to
