@@ -11,7 +11,7 @@ export const contentType = "image/png";
 
 export default async function Icon() {
   // Read the logo file
-  const logoPath = path.join(process.cwd(), "public/images/logo.jpg");
+  const logoPath = path.join(process.cwd(), "public/images/logo-favicon.jpg");
   const logoBuffer = fs.readFileSync(logoPath);
   const base64Logo = logoBuffer.toString("base64");
   const logoDataUri = `data:image/jpeg;base64,${base64Logo}`;
@@ -28,7 +28,6 @@ export default async function Icon() {
           backgroundColor: "#ffffff",
           borderRadius: "50%",
           overflow: "hidden",
-          border: "2px solid #0f3d3e",
         }}
       >
         <img

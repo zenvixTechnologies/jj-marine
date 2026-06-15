@@ -43,11 +43,11 @@ export default function SiteHeader() {
           {/* Logo Section */}
           <Link href="/jj-marine" className="flex items-center gap-2">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="JJ Marine Logo"
-              width={40}
-              height={40}
-              className="h-10 w-10 object-contain rounded-md shadow-sm"
+              width={48}
+              height={48}
+              className="h-12 w-12 object-contain"
               priority
             />
             <div className="flex flex-col">
@@ -125,11 +125,11 @@ export default function SiteHeader() {
             onClick={() => setIsDrawerOpen(false)}
           >
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="JJ Marine Logo"
-              width={36}
-              height={36}
-              className="h-9 w-9 object-contain rounded-md"
+              width={44}
+              height={44}
+              className="h-11 w-11 object-contain"
             />
             <span className="font-display text-[0.88rem] font-bold text-marine-primary">
               JJ Marine

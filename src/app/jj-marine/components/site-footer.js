@@ -14,15 +14,15 @@ export default function SiteFooter() {
   return (
     <footer id="contact" className="bg-marine-primary text-white">
       <div className="mx-auto w-full max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
-        <div className="grid gap-10 md:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-3">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo.png"
                 alt="JJ Marine Logo"
-                width={48}
-                height={48}
-                className="h-12 w-12 object-contain rounded-md shadow-sm bg-white p-0.5"
+                width={64}
+                height={64}
+                className="h-16 w-16 object-contain"
               />
               <div className="flex flex-col">
                 <span className="font-display text-[1.25rem] font-bold uppercase tracking-tight text-marine-gold leading-none">
@@ -113,28 +113,6 @@ export default function SiteFooter() {
             </ul>
           </div>
 
-          <div className="space-y-5">
-            <h4 className="font-display text-[1.05rem] font-semibold">
-              Newsletter
-            </h4>
-            <p className="text-[0.92rem] leading-6 text-white/70">
-              Stay updated with maritime industry news and job opportunities.
-            </p>
-
-            <div className="relative">
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full rounded-[10px] border border-white/10 bg-white/5 px-4 py-3 pr-20 text-sm text-white outline-none placeholder:text-white/40 focus:border-marine-gold/60"
-              />
-              <button
-                type="button"
-                className="absolute right-2 top-2 rounded-[8px] bg-gradient-to-r from-marine-gold to-marine-gold-soft px-3 py-1.5 text-[0.78rem] font-bold text-marine-primary"
-              >
-                Join
-              </button>
-            </div>
-          </div>
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-5">

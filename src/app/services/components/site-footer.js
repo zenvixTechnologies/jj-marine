@@ -15,11 +15,11 @@ export default function SiteFooter() {
         <div className="space-y-6">
           <div className="flex items-center gap-3">
             <Image
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="JJ Marine Logo"
-              width={48}
-              height={48}
-              className="h-12 w-12 object-contain rounded-md shadow-sm bg-white p-0.5"
+              width={64}
+              height={64}
+              className="h-16 w-16 object-contain"
             />
             <div className="flex flex-col">
               <span className="font-display text-[1.25rem] font-bold uppercase tracking-tight text-[#d4af37] leading-none">
