@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="font-body min-h-screen overflow-x-hidden bg-marine-surface text-marine-primary">
       <SiteHeader />
-      <main className="pt-[56px]">
+      <main className="pt-[72px] md:pt-[84px]">
         <IndustriesSection />
         <ContactFormSection />
         <ContactMapSection />

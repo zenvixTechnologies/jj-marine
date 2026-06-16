@@ -22,7 +22,7 @@ export default function WhyPartnersSection() {
               </h3>
             </div>
             <p className="mb-6 text-[0.92rem] leading-7 text-[#475558]">
-              Our recruitment and placement services are fully compliant with
+              Our placement and HR services are fully compliant with
               MLC 2006 standards and local international labor laws. We
               prioritize ethical placement and the welfare of our seafaring
               professionals above all else.
@@ -30,7 +30,7 @@ export default function WhyPartnersSection() {
             <div className="space-y-2">
               <div className="flex items-center gap-3 font-semibold text-[#1e6f5c]">
                 <TaskAltIcon className="h-4 w-4" />
-                <span>Certified Recruitment Quality Management</span>
+                <span>Certified Personnel Quality Management</span>
               </div>
               <div className="flex items-center gap-3 font-semibold text-[#1e6f5c]">
                 <TaskAltIcon className="h-4 w-4" />

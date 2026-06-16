@@ -2,10 +2,31 @@
 
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ContactFormSection() {
+  const [fullName, setFullName] = useState("");
+  const [organization, setOrganization] = useState("");
+  const [serviceInterest, setServiceInterest] = useState("Crew Management");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const text = `*New Enquiry from JJ Marine Website*
+---------------------------------------
+*Name:* ${fullName}
+*Organization:* ${organization}
+*Service Interest:* ${serviceInterest}
+*Message:* ${message}
+---------------------------------------`;
+
+    const encodedText = encodeURIComponent(text);
+    const whatsappUrl = `https://wa.me/919539550576?text=${encodedText}`;
+    window.open(whatsappUrl, "_blank", "noopener,noreferrer");
+  };
   return (
     <section className="py-20 horizon-gradient text-white relative overflow-hidden">
       {/* Background Glows */}
@@ -23,10 +44,10 @@ export default function ContactFormSection() {
             </h2>
 
             <p className="text-surface-variant mb-8 text-gray-300">
-              Discuss your recruitment or logistical requirements with our dedicated corporate advisors.
+              Discuss your staffing or logistical requirements with our dedicated corporate advisors.
             </p>
 
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-semibold tracking-wider text-marine-gold mb-2 uppercase text-xs">
@@ -34,7 +55,10 @@ export default function ContactFormSection() {
                   </label>
                   <input
                     type="text"
+                    value={fullName}
+                    onChange={(e) => setFullName(e.target.value)}
                     placeholder="John Doe"
+                    required
                     className="w-full bg-marine-primary/40 border border-white/20 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-marine-gold focus:border-marine-gold outline-none placeholder:text-white/40"
                   />
                 </div>
@@ -45,7 +69,10 @@ export default function ContactFormSection() {
                   </label>
                   <input
                     type="text"
+                    value={organization}
+                    onChange={(e) => setOrganization(e.target.value)}
                     placeholder="Enterprise Ltd."
+                    required
                     className="w-full bg-marine-primary/40 border border-white/20 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-marine-gold focus:border-marine-gold outline-none placeholder:text-white/40"
                   />
                 </div>
@@ -55,11 +82,15 @@ export default function ContactFormSection() {
                 <label className="block text-sm font-semibold tracking-wider text-marine-gold mb-2 uppercase text-xs">
                   Service Interest
                 </label>
-                <select className="w-full bg-marine-primary/40 border border-white/20 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-marine-gold focus:border-marine-gold outline-none">
-                  <option>Crew Management</option>
-                  <option>HR Solutions</option>
-                  <option>Maritime Training</option>
-                  <option>Global Logistics</option>
+                <select
+                  value={serviceInterest}
+                  onChange={(e) => setServiceInterest(e.target.value)}
+                  className="w-full bg-marine-primary/40 border border-white/20 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-marine-gold focus:border-marine-gold outline-none text-white [&>option]:text-black"
+                >
+                  <option value="Crew Management">Crew Management</option>
+                  <option value="HR Solutions">HR Solutions</option>
+                  <option value="Maritime Training">Maritime Training</option>
+                  <option value="Global Logistics">Global Logistics</option>
                 </select>
               </div>
 
@@ -69,7 +100,10 @@ export default function ContactFormSection() {
                 </label>
                 <textarea
                   rows={4}
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder="Tell us about your requirements..."
+                  required
                   className="w-full bg-marine-primary/40 border border-white/20 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-marine-gold focus:border-marine-gold outline-none placeholder:text-white/40"
                 />
               </div>
@@ -148,7 +182,7 @@ export default function ContactFormSection() {
                 </div>
 
                 <p className="text-surface-variant italic leading-relaxed text-gray-300 text-sm">
-                  "The technical recruitment support provided by JJ Marine helped us scale our maritime software division in record time. Truly a reliable partner."
+                  "The technical staffing support provided by JJ Marine helped us scale our maritime software division in record time. Truly a reliable partner."
                 </p>
               </div>
             </div>

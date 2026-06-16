@@ -24,7 +24,7 @@ function FeatureItem({ icon: Icon, title, text }) {
 
 export default function HeroFeatureSection() {
   return (
-    <section className="mb-8">
+    <section id="marine-logistics" className="mb-8">
       <div className="glass-card group overflow-hidden rounded-xl p-8 shadow-xl transition-all duration-500 hover:ring-2 hover:ring-[#d4af37]/30">
         <div className="flex flex-col gap-10 lg:flex-row">
           <div className="lg:w-1/2">

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  BadgeIcon,
   ChevronDownIcon,
   SailIcon,
   SchoolIcon,
@@ -48,26 +47,6 @@ const services = [
       {
         title: "Training Programs",
         text: "Specialized certification and skill-upgrading modules for vessel crew.",
-      },
-    ],
-  },
-  {
-    title: "Maritime Recruitment",
-    summary: "Connecting skilled seafarers with prestigious ship owners.",
-    icon: BadgeIcon,
-    iconShell: "border-2 border-marine-gold text-marine-gold",
-    details: [
-      {
-        title: "Executive Search",
-        text: "Headhunting top-tier leadership for maritime corporate offices.",
-      },
-      {
-        title: "Crew Manning",
-        text: "End-to-end recruitment for all vessel ranks, from deck cadets to captains.",
-      },
-      {
-        title: "Verification",
-        text: "Rigorous background checks and certification validation services.",
       },
     ],
   },

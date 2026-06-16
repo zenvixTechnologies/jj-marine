@@ -39,22 +39,24 @@ export default function SiteHeader() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/15 bg-[#e6e8e1]/90 backdrop-blur-xl shadow-[0_12px_30px_rgba(15,61,62,0.08)]">
-        <div className="mx-auto flex h-[56px] w-full max-w-[1280px] items-center justify-between px-4 md:px-6">
+        <div className="mx-auto flex h-[72px] md:h-[84px] w-full max-w-[1280px] items-center justify-between px-4 md:px-6 transition-all duration-300">
           {/* Logo Section */}
-          <Link href="/jj-marine" className="flex items-center gap-2">
-            <Image
-              src="/images/logo.png"
-              alt="JJ Marine Logo"
-              width={48}
-              height={48}
-              className="h-12 w-12 object-contain"
-              priority
-            />
+          <Link href="/jj-marine" className="flex items-center gap-3">
+            <div className="relative h-24 w-24 md:h-[140px] md:w-[140px] flex items-center justify-center transition-all duration-300">
+              <Image
+                src="/images/logo.png"
+                alt="JJ Marine Logo"
+                fill
+                sizes="(max-width: 768px) 96px, 140px"
+                className="object-contain"
+                priority
+              />
+            </div>
             <div className="flex flex-col">
-              <span className="font-display text-[0.95rem] font-bold tracking-tight text-marine-primary leading-none">
+              <span className="font-display text-[1.1rem] md:text-[1.25rem] font-bold tracking-tight text-marine-primary leading-none transition-all">
                 JJ Marine
               </span>
-              <span className="text-[0.55rem] uppercase tracking-widest text-marine-gold font-medium mt-0.5">
+              <span className="text-[0.6rem] md:text-[0.68rem] uppercase tracking-widest text-marine-gold font-medium mt-1 transition-all">
                 Logistics & HR
               </span>
             </div>
@@ -118,20 +120,22 @@ export default function SiteHeader() {
         ].join(" ")}
       >
         {/* Drawer Header */}
-        <div className="flex h-[56px] items-center justify-between border-b border-gray-100 px-4">
+        <div className="flex h-[68px] items-center justify-between border-b border-gray-100 px-4">
           <Link
             href="/jj-marine"
-            className="flex items-center gap-2"
+            className="flex items-center gap-3"
             onClick={() => setIsDrawerOpen(false)}
           >
-            <Image
-              src="/images/logo.png"
-              alt="JJ Marine Logo"
-              width={44}
-              height={44}
-              className="h-11 w-11 object-contain"
-            />
-            <span className="font-display text-[0.88rem] font-bold text-marine-primary">
+            <div className="relative h-20 w-20 flex items-center justify-center">
+              <Image
+                src="/images/logo.png"
+                alt="JJ Marine Logo"
+                fill
+                sizes="80px"
+                className="object-contain"
+              />
+            </div>
+            <span className="font-display text-[1rem] font-bold text-marine-primary">
               JJ Marine
             </span>
           </Link>

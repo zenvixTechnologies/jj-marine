@@ -7,7 +7,7 @@ export default function HeroSection() {
         <img
           alt="Luxury Maritime Background"
           className="h-full w-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXv8KYtR7BXK6Ot2XGfZUnNhvzcw01qLsZvk0iZoFBaW1ADE8uZs4MSC4uFnEXrrs3NyqIQvMtvj9AErUQd_lSoaIKMyEdQbXDdPjQ01o48XIexANDNQCvdKfb3HWIpvR0o1yAaTYpUU1x8GmUCSBK6PRglkL9Dw9q4xzDgLixV-j-9G42PpcaTRU7KuoRHkx2lpDyFc__OFM1LNluwarn-jpLzfav6jkpjxOaRiTgRW_35aQRaa7RuA2qzwq7L5KPXq8KVJ_mb-c"
+          src="/images/service.png"
         />
       </div>
 

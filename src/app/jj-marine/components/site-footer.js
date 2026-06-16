@@ -2,12 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 import {
-  ChatBubbleIcon,
   LanguageIcon,
   LocationIcon,
   MailIcon,
   PersonIcon,
   PhoneIcon,
+  WhatsAppIcon,
 } from "./icons";
 
 export default function SiteFooter() {
@@ -17,18 +17,20 @@ export default function SiteFooter() {
         <div className="grid gap-10 md:grid-cols-3">
           <div className="space-y-5">
             <div className="flex items-center gap-3">
-              <Image
-                src="/images/logo.png"
-                alt="JJ Marine Logo"
-                width={64}
-                height={64}
-                className="h-16 w-16 object-contain"
-              />
+              <div className="relative h-20 w-20 md:h-[96px] md:w-[96px] flex items-center justify-center">
+                <Image
+                  src="/images/logo.png"
+                  alt="JJ Marine Logo"
+                  fill
+                  sizes="(max-width: 768px) 80px, 96px"
+                  className="object-contain"
+                />
+              </div>
               <div className="flex flex-col">
-                <span className="font-display text-[1.25rem] font-bold uppercase tracking-tight text-marine-gold leading-none">
+                <span className="font-display text-[1.4rem] md:text-[1.6rem] font-bold uppercase tracking-tight text-marine-gold leading-none">
                   JJ Marine
                 </span>
-                <span className="text-[0.6rem] uppercase tracking-widest text-white/70 font-medium mt-1">
+                <span className="text-[0.65rem] md:text-[0.72rem] uppercase tracking-widest text-white/70 font-medium mt-1.5">
                   Logistics & HR
                 </span>
               </div>
@@ -67,22 +69,17 @@ export default function SiteFooter() {
             </h4>
             <ul className="space-y-3 text-[0.92rem] text-white/70">
               <li>
-                <Link href="/services" className="transition-colors hover:text-white">
+                <Link href="/services#marine-logistics" className="transition-colors hover:text-white">
                   Marine Logistics
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="transition-colors hover:text-white">
+                <Link href="/services#hr-solutions" className="transition-colors hover:text-white">
                   HR Solutions
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="transition-colors hover:text-white">
-                  Maritime Recruitment
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="transition-colors hover:text-white">
+                <Link href="/services#student-placements" className="transition-colors hover:text-white">
                   Student Placements
                 </Link>
               </li>
@@ -147,7 +144,7 @@ export default function SiteFooter() {
         aria-label="Chat on WhatsApp"
         className="fixed bottom-6 right-6 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-marine-gold to-marine-gold-soft text-marine-primary shadow-[0_18px_40px_rgba(212,175,55,0.35)] transition-transform hover:scale-110 active:scale-95 md:bottom-8 md:right-8 md:h-16 md:w-16"
       >
-        <ChatBubbleIcon className="h-6 w-6 md:h-7 md:w-7" />
+        <WhatsAppIcon className="h-6 w-6 md:h-7 md:w-7" />
       </a>
     </footer>
   );

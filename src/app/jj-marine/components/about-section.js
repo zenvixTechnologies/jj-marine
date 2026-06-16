@@ -6,7 +6,7 @@ const milestones = [
   {
     step: "1",
     title: "The Inception",
-    text: "Starting in Kochi with a vision to streamline maritime recruitment and logistics in Southern India.",
+    text: "Starting in Kochi with a vision to streamline maritime human resources and logistics in Southern India.",
   },
   {
     step: "2",
@@ -27,7 +27,7 @@ export default function AboutSection() {
         <div className="relative">
           <div className="overflow-hidden rounded-[28px] shadow-[0_28px_65px_rgba(19,35,31,0.16)]">
             <img
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIDOQxdF-pZHK2U5mbTta3xvM1XueBVlBn41DkoHDMQ1E_ph1QpVOP1PLr8WfUZx68Ga_xPS5Vl6LmuoK0qUj4-BBfwvJQ_K2Rf0qt5IqxqAC2G0BteqEcF1_Nmt7ZGhKVHhY9bs1lV10I7z6n33ChxCVmiVW4GZe8npGSCHNVvaxWUvOu6a8v5Gzdp05KRh991RgLtZEt3STYR0ChXt0FYabj0z5NPsh9KkcNScqBnTRXt9WaXGpxaFuJLRiya83Ws08h5IcmWDU"
+              src="/images/home.png"
               alt="Maritime office in Kochi"
               className="aspect-square w-full object-cover"
             />
@@ -53,7 +53,7 @@ export default function AboutSection() {
             <p className="mt-4 max-w-[44rem] text-[1rem] leading-7 text-marine-text md:text-[1.05rem]">
               Founded on the principles of integrity and operational
               excellence, JJ Marine Logistics &amp; HR Solutions has evolved
-              from a local Kochi recruitment firm into a global maritime
+              from a local Kochi maritime agency into a global maritime
               powerhouse.
             </p>
           </div>

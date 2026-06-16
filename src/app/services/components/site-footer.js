@@ -14,18 +14,20 @@ export default function SiteFooter() {
       <div className="mx-auto grid max-w-[1280px] grid-cols-1 gap-12 px-4 md:grid-cols-4 md:px-6">
         <div className="space-y-6">
           <div className="flex items-center gap-3">
-            <Image
-              src="/images/logo.png"
-              alt="JJ Marine Logo"
-              width={64}
-              height={64}
-              className="h-16 w-16 object-contain"
-            />
+            <div className="relative h-20 w-20 md:h-[96px] md:w-[96px] flex items-center justify-center">
+              <Image
+                src="/images/logo.png"
+                alt="JJ Marine Logo"
+                fill
+                sizes="(max-width: 768px) 80px, 96px"
+                className="object-contain"
+              />
+            </div>
             <div className="flex flex-col">
-              <span className="font-display text-[1.25rem] font-bold uppercase tracking-tight text-[#d4af37] leading-none">
+              <span className="font-display text-[1.4rem] md:text-[1.6rem] font-bold uppercase tracking-tight text-[#d4af37] leading-none">
                 JJ Marine
               </span>
-              <span className="text-[0.6rem] uppercase tracking-widest text-[#e7e8e8]/70 font-medium mt-1">
+              <span className="text-[0.65rem] md:text-[0.72rem] uppercase tracking-widest text-[#e7e8e8]/70 font-medium mt-1.5">
                 Logistics & HR
               </span>
             </div>
@@ -62,23 +64,18 @@ export default function SiteFooter() {
           </h4>
           <ul className="space-y-4 text-[0.9rem] text-white/70">
             <li>
-              <Link href="/services" className="hover:text-[#d4af37]">
-                Maritime Recruitment
+              <Link href="/services#marine-logistics" className="hover:text-[#d4af37]">
+                Marine Logistics
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-[#d4af37]">
-                Vessel Logistics
+              <Link href="/services#hr-solutions" className="hover:text-[#d4af37]">
+                HR Solutions
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-[#d4af37]">
-                HR Consulting
-              </Link>
-            </li>
-            <li>
-              <Link href="/services" className="hover:text-[#d4af37]">
-                Overseas Jobs
+              <Link href="/services#student-placements" className="hover:text-[#d4af37]">
+                Student Placements
               </Link>
             </li>
           </ul>

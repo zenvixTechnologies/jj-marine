@@ -39,8 +39,18 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-gradient-to-br from-marine-primary via-[#176050] to-marine-secondary pt-[56px]"
+      className="relative overflow-hidden bg-gradient-to-br from-marine-primary via-[#176050] to-marine-secondary pt-[72px] md:pt-[84px]"
     >
+      {/* Background Image */}
+      <div className="absolute inset-0 opacity-35 pointer-events-none">
+        <img
+          alt="Maritime Background"
+          className="h-full w-full object-cover"
+          src="/images/hero.png"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-marine-primary/90 via-marine-primary/60 to-transparent" />
+      </div>
+
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_25%,rgba(212,175,55,0.12),transparent_45%),radial-gradient(circle_at_20%_70%,rgba(255,255,255,0.05),transparent_35%)]" />
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#f8f9fa] to-transparent" />
@@ -94,9 +104,9 @@ export default function HeroSection() {
         <div className="relative mx-auto flex w-full max-w-[520px] items-center">
           <div className="absolute inset-x-8 top-14 h-[68%] rounded-[22px] bg-marine-panel-deep/80 shadow-[0_28px_80px_rgba(0,0,0,0.18)]" />
           <img
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOxv3YLuYy4ZhjRCIaQCKKkLb_XoUDbWk_dHgxO5DoyMvOrKzZmrC2JSFYagRmyO5o35HFV2Rl771qLHxP5OS43XaxfhaeX6JX3R9TaPD4YV0-h2brfRT2VA5_S2VSC9QNY9ZWm6GeUKGaol9McD3s-Z4TGENBFLtzFfcHTXsZQTkf8eFaLA5V1W4fe-1d3E_D0VM0CK-aSjHLq_qsbDNaU1Gf94iYrPviyqdATDmRtoHczud58GNHeZIT2I17oqmoegL1dpK1IeU"
-            alt="Logistics map backdrop"
-            className="pointer-events-none absolute inset-0 h-full w-full object-contain opacity-25 mix-blend-overlay"
+            src="/images/shipping.jpg"
+            alt="Container Shipping Backdrop"
+            className="pointer-events-none absolute inset-x-8 top-14 h-[68%] rounded-[22px] object-cover opacity-20 mix-blend-overlay"
           />
 
           <div className="relative z-10 grid w-full grid-cols-2 gap-4 p-3 md:gap-5 md:p-0">

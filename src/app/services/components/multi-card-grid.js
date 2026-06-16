@@ -28,7 +28,7 @@ function ListIconItem({ icon: Icon, label }) {
 export default function MultiCardGrid() {
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
-      <section className="md:col-span-5">
+      <section id="hr-solutions" className="md:col-span-5">
         <div className="glass-card flex h-full flex-col rounded-xl border-l-4 border-l-[#1e6f5c] p-8">
           <GroupsIcon className="mb-6 h-10 w-10 text-[#1e6f5c]" />
           <h3 className="mb-4 font-display text-[clamp(1.4rem,2vw,1.8rem)] font-semibold text-[#0f3d3e]">
@@ -40,7 +40,7 @@ export default function MultiCardGrid() {
           </p>
 
           <ul className="flex-grow space-y-6">
-            <ListIconItem icon={PersonSearchIcon} label="Executive Recruitment" />
+            <ListIconItem icon={PersonSearchIcon} label="Executive Staffing" />
             <ListIconItem icon={PaymentsIcon} label="Managed Payroll" />
             <ListIconItem icon={BadgeIcon} label="Temporary Staffing" />
             <ListIconItem icon={ForumIcon} label="HR Consulting" />
@@ -59,46 +59,20 @@ export default function MultiCardGrid() {
             className="absolute inset-0 h-full w-full object-cover grayscale-[20%] transition-transform duration-1000 hover:scale-105"
             src="/images/Maritime.png"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e]/90 via-[#0f3d3e]/40 to-transparent" />
-          <div className="absolute bottom-0 w-full p-10 text-white">
-            <div className="mb-2 flex items-center gap-3 text-[#d4af37]">
-              <AnchorIcon className="h-4 w-4" />
-              <span className="font-display text-[0.75rem] font-bold uppercase tracking-[0.2em]">
-                Elite Crewing
-              </span>
-            </div>
-            <h3 className="mb-4 font-display text-[clamp(1.6rem,2.5vw,2.2rem)] font-semibold">
-              Maritime Recruitment
-            </h3>
-
-            <div className="grid grid-cols-2 gap-4 text-white/90">
-              <div className="flex items-center gap-2">
-                <span className="text-sm">•</span>
-                <span>Deck Officers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm">•</span>
-                <span>Marine Engineers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm">•</span>
-                <span>Rating Crew</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-sm">•</span>
-                <span>Technical Shore Staff</span>
-              </div>
-            </div>
-
-            <p className="mt-6 max-w-lg text-white/70">
-              We source the world&apos;s most qualified seafarers, ensuring every
-              vessel is manned by excellence and safety-first expertise.
-            </p>
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e] via-[#0f3d3e]/40 to-transparent" />
+          <div className="absolute bottom-0 w-full p-8 md:p-12 text-white">
+            <span className="text-[3rem] font-serif text-[#d4af37] leading-none block mb-1">“</span>
+            <blockquote className="font-display text-[1.25rem] md:text-[1.45rem] font-medium italic leading-relaxed text-white/95 mb-4 -mt-4">
+              A smooth sea never made a skilled sailor. We recruit, train, and deploy the finest minds at sea to power global maritime commerce.
+            </blockquote>
+            <cite className="not-italic text-[0.8rem] font-bold uppercase tracking-widest text-[#d4af37]">
+              — JJ Marine Crewing Excellence
+            </cite>
           </div>
         </div>
       </section>
 
-      <section className="md:col-span-4">
+      <section id="student-placements" className="md:col-span-4">
         <div className="rounded-xl border-t-4 border-t-[#d4af37] bg-white p-8 shadow-md transition-all hover:shadow-xl">
           <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-[#f1d592]/20 text-[#d4af37]">
             <SchoolIcon className="h-5 w-5" />
@@ -112,7 +86,7 @@ export default function MultiCardGrid() {
           </p>
 
           <div className="space-y-3">
-            {["Global Internships", "Campus Recruitment", "Interview Training"].map(
+            {["Global Internships", "Campus Placements", "Interview Training"].map(
               (item) => (
                 <div
                   key={item}
