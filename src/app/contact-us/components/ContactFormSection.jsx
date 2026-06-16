@@ -14,7 +14,7 @@ export default function ContactFormSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     const text = `*New Enquiry from JJ Marine Website*
 ---------------------------------------
 *Name:* ${fullName}
@@ -24,7 +24,7 @@ export default function ContactFormSection() {
 ---------------------------------------`;
 
     const encodedText = encodeURIComponent(text);
-    const whatsappUrl = `https://wa.me/919539550576?text=${encodedText}`;
+    const whatsappUrl = `https://wa.me/919447988100?text=${encodedText}`;
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
   return (

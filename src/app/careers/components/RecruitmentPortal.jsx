@@ -26,7 +26,7 @@ export default function CareerPortal() {
 ---------------------------------------`;
 
     const encodedText = encodeURIComponent(text);
-    const whatsappUrl = `https://wa.me/919539550576?text=${encodedText}`;
+    const whatsappUrl = `https://wa.me/919447988100?text=${encodedText}`;
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");
   };
 
