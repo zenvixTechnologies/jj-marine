@@ -4,7 +4,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Globe, ShieldAlert, Rocket, UploadCloud } from "lucide-react";
+import { Globe, ShieldAlert, Rocket } from "lucide-react";
 
 export default function CareerPortal() {
   const [fullName, setFullName] = useState("");
@@ -12,13 +12,6 @@ export default function CareerPortal() {
   const [phone, setPhone] = useState("");
   const [targetPosition, setTargetPosition] = useState("Deck Officer");
   const [experience, setExperience] = useState("1-3 Years");
-  const [cvName, setCvName] = useState("");
-
-  const handleFileChange = (e) => {
-    if (e.target.files && e.target.files[0]) {
-      setCvName(e.target.files[0].name);
-    }
-  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,9 +23,7 @@ export default function CareerPortal() {
 *Phone:* ${phone}
 *Target Position:* ${targetPosition}
 *Experience:* ${experience}
-*CV File:* ${cvName || "No file uploaded"}
----------------------------------------
-_Note: Applicant will attach their CV to this chat._`;
+---------------------------------------`;
 
     const encodedText = encodeURIComponent(text);
     const whatsappUrl = `https://wa.me/919539550576?text=${encodedText}`;
@@ -131,23 +122,7 @@ _Note: Applicant will attach their CV to this chat._`;
                 </div>
               </div>
 
-              <div className="space-y-2">
-                <label className="text-xs font-bold text-marine-primary uppercase tracking-wider block">Upload CV / Portfolio</label>
-                <div className="group relative flex flex-col items-center justify-center p-10 border-2 border-dashed border-gray-200 rounded-3xl hover:border-marine-gold transition-colors bg-white/30 cursor-pointer overflow-hidden text-center">
-                  <div className="absolute inset-0 bg-marine-gold/5 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
-                  <UploadCloud size={36} className="text-marine-secondary mb-3 transition-transform group-hover:-translate-y-1" />
-                  <p className="text-marine-primary font-bold text-sm">
-                    {cvName ? `Selected: ${cvName}` : "Drag and drop file here"}
-                  </p>
-                  <p className="text-[11px] text-marine-text/70 mt-1">PDF, DOCX (Max 10MB)</p>
-                  <input
-                    className="absolute inset-0 opacity-0 cursor-pointer"
-                    type="file"
-                    onChange={handleFileChange}
-                    required
-                  />
-                </div>
-              </div>
+
 
               <button
                 type="submit"
