@@ -52,7 +52,7 @@ const services = [
   },
   {
     title: "Student Placements",
-    summary: "The launchpad for the next generation of maritime professionals.",
+    summary: "We connect qualified candidates with leading employers in India and abroad, providing guidance, training, and support to help them achieve successful careers.",
     icon: SchoolIcon,
     iconShell:
       "bg-gradient-to-r from-marine-gold to-marine-gold-soft text-marine-primary",
