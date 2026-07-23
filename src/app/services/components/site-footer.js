@@ -28,7 +28,7 @@ export default function SiteFooter() {
                 JJ Marine
               </span>
               <span className="text-[0.65rem] md:text-[0.72rem] uppercase tracking-widest text-[#e7e8e8]/70 font-medium mt-1.5">
-                Logistics & HR
+                Logistics & HR Solutions Pvt. Ltd.
               </span>
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function SiteFooter() {
 
       <div className="mx-auto mt-16 flex max-w-[1280px] flex-col items-center justify-between gap-4 border-t border-white/10 px-4 py-8 md:flex-row md:px-6">
         <p className="text-[0.74rem] text-white/50">
-          © 2024 JJ Marine Logistics &amp; HR Solutions. All rights reserved.
+          © 2026 JJ Marine Logistics &amp; HR Solutions Pvt. Ltd. All rights reserved.
         </p>
         <div className="flex gap-6">
           <span className="text-[0.72rem] font-bold uppercase tracking-[0.15em] text-[#d4af37]">

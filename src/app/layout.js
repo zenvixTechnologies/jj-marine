@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "JJ Marine Logistics & HR Solutions",
+  title: "JJ Marine Logistics & HR Solutions Pvt. Ltd.",
   description: "Global maritime logistics and human resource solutions.",
 };
 

@@ -12,6 +12,7 @@ export default function SiteHeader() {
 
   const navItems = [
     { label: "Home", href: "/jj-marine" },
+    { label: "About Us", href: "/about-us" },
     { label: "Services", href: "/services" },
     { label: "Careers", href: "/careers" },
     { label: "Contact Us", href: "/contact-us" },
@@ -56,8 +57,8 @@ export default function SiteHeader() {
               <span className="font-display text-[1.1rem] md:text-[1.25rem] font-bold tracking-tight text-marine-primary leading-none transition-all">
                 JJ Marine
               </span>
-              <span className="text-[0.6rem] md:text-[0.68rem] uppercase tracking-widest text-marine-gold font-medium mt-1 transition-all">
-                Logistics & HR
+              <span className="text-[0.58rem] md:text-[0.65rem] uppercase tracking-wider text-marine-gold font-semibold mt-1 transition-all">
+                Logistics & HR Solutions Pvt. Ltd.
               </span>
             </div>
           </Link>

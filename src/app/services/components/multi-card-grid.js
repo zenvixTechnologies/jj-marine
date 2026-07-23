@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import {
   AnchorIcon,
   BadgeIcon,
   ChevronRightIcon,
+  FlightIcon,
   ForumIcon,
   GroupsIcon,
   ImportExportIcon,
@@ -36,14 +36,15 @@ export default function MultiCardGrid() {
           </h3>
           <p className="mb-8 text-[0.95rem] leading-7 text-[#475558]">
             Professional workforce management designed for the unique demands
-            of the shipping and maritime sector.
+            of the shipping.
           </p>
 
-          <ul className="flex-grow space-y-6">
+          <ul className="flex-grow space-y-4">
             <ListIconItem icon={PersonSearchIcon} label="Executive Staffing" />
             <ListIconItem icon={PaymentsIcon} label="Managed Payroll" />
             <ListIconItem icon={BadgeIcon} label="Temporary Staffing" />
             <ListIconItem icon={ForumIcon} label="HR Consulting" />
+            <ListIconItem icon={FlightIcon} label="Visa & Travel Assistance" />
           </ul>
 
           <button className="mt-8 rounded-lg border-2 border-[#1e6f5c] px-6 py-3 font-bold text-[#1e6f5c] transition-all hover:bg-[#1e6f5c] hover:text-white">
@@ -54,10 +55,12 @@ export default function MultiCardGrid() {
 
       <section className="md:col-span-7">
         <div className="relative min-h-[500px] overflow-hidden rounded-xl shadow-xl">
-          <img
+          <Image
             alt="Maritime Officers"
-            className="absolute inset-0 h-full w-full object-cover grayscale-[20%] transition-transform duration-1000 hover:scale-105"
+            className="object-cover grayscale-[20%] transition-transform duration-1000 hover:scale-105"
             src="/images/Maritime.png"
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e] via-[#0f3d3e]/40 to-transparent" />
           <div className="absolute bottom-0 w-full p-8 md:p-12 text-white">
@@ -81,7 +84,7 @@ export default function MultiCardGrid() {
             Student Placements
           </h3>
           <p className="mb-6 text-[0.9rem] leading-6 text-[#475558]">
-            Bridging the gap between maritime education and global industry
+            Bridging the gap between education and global industry
             careers.
           </p>
 
@@ -110,7 +113,7 @@ export default function MultiCardGrid() {
               </h3>
               <p className="mb-6 text-[0.95rem] leading-7 text-[#475558]">
                 Exclusive partnerships with international fleets across
-                strategic global maritime hubs.
+                strategic global hubs.
               </p>
               <div className="flex flex-wrap gap-2">
                 {[

@@ -8,14 +8,14 @@ import SiteHeader from "../jj-marine/components/site-header";
 import SiteFooter from "../jj-marine/components/site-footer";
 
 export const metadata = {
-  title: "JJ Marine | Detailed Services Experience",
-  description: "Detailed services showcase for JJ Marine Logistics and HR.",
+  title: "Services | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  description: "Detailed services showcase for JJ Marine Logistics & HR Solutions Pvt. Ltd.",
 };
 
 export default function ServicesPage() {
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#f0f4f4] font-body text-[#1e292b]">
-      <SiteHeader/>
+      <SiteHeader />
       <HeroSection />
       <main className="relative z-20 mx-auto max-w-[1280px] px-4 pt-[40px] pb-[80px] md:px-6">
         <div className="-mt-24">
@@ -25,7 +25,7 @@ export default function ServicesPage() {
         </div>
       </main>
       <WhyPartnersSection />
-      <SiteFooter/>
+      <SiteFooter />
     </div>
   );
 }

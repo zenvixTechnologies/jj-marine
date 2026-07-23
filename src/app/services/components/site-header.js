@@ -3,11 +3,10 @@ import Link from "next/link";
 export default function SiteHeader() {
   const navItems = [
     { label: "Home", href: "/jj-marine" },
-    { label: "About Us", href: "/jj-marine#about" },
+    { label: "About Us", href: "/about-us" },
     { label: "Services", href: "/services", active: true },
-    { label: "Jobs", href: "/jj-marine#services" },
-    { label: "Careers", href: "/jj-marine#about" },
-    { label: "Contact Us", href: "/jj-marine#contact" },
+    { label: "Careers", href: "/careers" },
+    { label: "Contact Us", href: "/contact-us" },
   ];
 
   return (

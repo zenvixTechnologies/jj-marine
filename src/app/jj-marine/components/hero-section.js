@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-
 import Link from "next/link";
+import Image from "next/image";
 import {
   AnchorIcon,
   ArrowRightIcon,
@@ -43,10 +42,13 @@ export default function HeroSection() {
     >
       {/* Background Image */}
       <div className="absolute inset-0 opacity-35 pointer-events-none">
-        <img
+        <Image
           alt="Maritime Background"
-          className="h-full w-full object-cover"
+          className="object-cover"
           src="/images/hero.png"
+          fill
+          priority
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-marine-primary/90 via-marine-primary/60 to-transparent" />
       </div>
@@ -64,10 +66,10 @@ export default function HeroSection() {
             </span>
           </div>
 
-          <h1 className="font-display mt-5 max-w-[11ch] text-[clamp(2.5rem,5vw,4.3rem)] font-extrabold leading-[0.95] tracking-[-0.04em] text-balance">
+          <h1 className="font-display mt-5 max-w-[14ch] text-[clamp(2.2rem,4.2vw,3.8rem)] font-extrabold leading-[1] tracking-[-0.04em] text-balance">
             JJ Marine Logistics &amp;
             <br />
-            <span className="text-marine-gold">HR Solutions</span>
+            <span className="text-marine-gold">HR Solutions Pvt. Ltd.</span>
           </h1>
 
           <p className="mt-5 max-w-[42rem] text-[0.96rem] leading-7 text-white/86 md:text-[1.05rem]">
@@ -103,11 +105,16 @@ export default function HeroSection() {
 
         <div className="relative mx-auto flex w-full max-w-[520px] items-center">
           <div className="absolute inset-x-8 top-14 h-[68%] rounded-[22px] bg-marine-panel-deep/80 shadow-[0_28px_80px_rgba(0,0,0,0.18)]" />
-          <img
-            src="/images/shipping.jpg"
-            alt="Container Shipping Backdrop"
-            className="pointer-events-none absolute inset-x-8 top-14 h-[68%] rounded-[22px] object-cover opacity-20 mix-blend-overlay"
-          />
+          <div className="pointer-events-none absolute inset-x-8 top-14 h-[68%] overflow-hidden rounded-[22px]">
+            <Image
+              src="/images/shipping.jpg"
+              alt="Container Shipping Backdrop"
+              className="object-cover opacity-20 mix-blend-overlay"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 500px"
+            />
+          </div>
 
           <div className="relative z-10 grid w-full grid-cols-2 gap-4 p-3 md:gap-5 md:p-0">
             {stats.map((stat) => (

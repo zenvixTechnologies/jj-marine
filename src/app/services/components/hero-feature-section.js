@@ -1,11 +1,12 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import {
   AnchorIcon,
+  CompassIcon,
   DocumentIcon,
   FreightIcon,
   ImportExportIcon,
   OfficeIcon,
+  SparePartsIcon,
 } from "./icons";
 
 function FeatureItem({ icon: Icon, title, text }) {
@@ -61,15 +62,27 @@ export default function HeroFeatureSection() {
                 title="Vessel Agency"
                 text="Local representation for international fleets in major ports."
               />
+              <FeatureItem
+                icon={CompassIcon}
+                title="Weather & Route Advisory"
+                text="Real-time meteorological monitoring and optimal voyage planning for safe, efficient navigation."
+              />
+              <FeatureItem
+                icon={SparePartsIcon}
+                title="Spare Parts Delivery"
+                text="Rapid door-to-deck dispatch and delivery for urgent vessel machinery and critical components."
+              />
             </div>
           </div>
 
           <div className="lg:w-1/2">
             <div className="relative min-h-[400px] overflow-hidden rounded-xl shadow-inner">
-              <img
+              <Image
                 alt="Logistics Control Center"
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYe62d_uILiohoxbXYb5O0UdhUlNDt2q_Jgjnrfnu9xigJ-QGGxLVlfKZpN-G9sTuTw_FIpIyRlSu0Cm_o54jxyLeIdk2saWzUb47x-9RKswtskVs4hVTLY7RAvq4l-kjFili-uOLqxFmPPykurfGk5DgeBc3dyW04i3yX5yQSeJJv0CRBZXGwvgxLg-r0ycBnvlqDPdxjWb_QlYauwXsxADYJk-oNiTosxd7qPcatxaRZ6XZlQ5A4GH844MtvxH1G42a45QAWs7c"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#0f3d3e]/40 to-transparent" />
             </div>

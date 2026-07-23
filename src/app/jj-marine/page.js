@@ -5,9 +5,9 @@ import SiteFooter from "./components/site-footer";
 import SiteHeader from "./components/site-header";
 
 export const metadata = {
-  title: "JJ Marine Logistics & HR Solutions | Global Maritime Excellence",
+  title: "JJ Marine Logistics & HR Solutions Pvt. Ltd. | Global Maritime Excellence",
   description:
-    "Maritime logistics, HR solutions, and student placements designed for global growth.",
+    "Maritime logistics, HR solutions, and student placements by JJ Marine Logistics & HR Solutions Pvt. Ltd.",
 };
 
 export default function JJMarinePage() {

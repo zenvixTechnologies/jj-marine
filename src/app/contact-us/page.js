@@ -7,6 +7,11 @@ import ContactMapSection from "./components/ContactMapSection";
 import IndustriesSection from "./components/IndustriesSection";
 
 
+export const metadata = {
+  title: "Contact Us | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  description: "Get in touch with JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+};
+
 export default function Home() {
   return (
     <div className="font-body min-h-screen overflow-x-hidden bg-marine-surface text-marine-primary">

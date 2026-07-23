@@ -7,8 +7,8 @@ import CareerPortal from "./components/RecruitmentPortal";
 import PillarsExcellence from "./components/PillarsExcellence";
 
 export const metadata = {
-  title: "JJ Marine | Career Portal & Global Reach",
-  description: "Connect with world-class maritime careers and placements globally.",
+  title: "Careers | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  description: "Connect with world-class maritime careers and placements with JJ Marine Logistics & HR Solutions Pvt. Ltd.",
 };
 
 export default function CareersPage() {

@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 import { ArrowRightIcon } from "./icons";
 
 const milestones = [
@@ -25,11 +24,13 @@ export default function AboutSection() {
     <section id="about" className="bg-[#f8f9fa] py-16 md:py-20">
       <div className="mx-auto grid w-full max-w-[1280px] items-center gap-12 px-4 md:px-6 lg:grid-cols-2 lg:gap-20">
         <div className="relative">
-          <div className="overflow-hidden rounded-[28px] shadow-[0_28px_65px_rgba(19,35,31,0.16)]">
-            <img
+          <div className="relative aspect-square overflow-hidden rounded-[28px] shadow-[0_28px_65px_rgba(19,35,31,0.16)]">
+            <Image
               src="/images/home.png"
               alt="Maritime office in Kochi"
-              className="aspect-square w-full object-cover"
+              className="object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
 
@@ -52,7 +53,7 @@ export default function AboutSection() {
             </h2>
             <p className="mt-4 max-w-[44rem] text-[1rem] leading-7 text-marine-text md:text-[1.05rem]">
               Founded on the principles of integrity and operational
-              excellence, JJ Marine Logistics &amp; HR Solutions has evolved
+              excellence, JJ Marine Logistics &amp; HR Solutions Pvt. Ltd. has evolved
               from a local Kochi maritime agency into a global maritime
               powerhouse.
             </p>

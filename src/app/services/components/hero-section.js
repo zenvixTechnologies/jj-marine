@@ -1,13 +1,16 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
     <section className="relative flex h-[614px] items-center overflow-hidden bg-[#0f3d3e] pt-24">
       <div className="absolute inset-0 opacity-30">
-        <img
+        <Image
           alt="Luxury Maritime Background"
-          className="h-full w-full object-cover"
+          className="object-cover"
           src="/images/service.png"
+          fill
+          priority
+          sizes="100vw"
         />
       </div>
 

@@ -233,3 +233,33 @@ export function TaskAltIcon({ className }) {
     </IconShell>
   );
 }
+
+export function FlightIcon({ className }) {
+  return (
+    <IconShell className={className}>
+      <path d="M17.8 19.2 16 11l3.5-3.5C20.1 6.9 20 5.5 19 4.5s-2.4-1.1-3 0L12.5 8 4.3 6.2c-.5-.1-1 .1-1.3.5l-.8 1 5.5 4.5-3.5 3.5-2.2-.6-.9.9 3.5 2.5 2.5 3.5.9-.9-.6-2.2 3.5-3.5 4.5 5.5 1-.8c.4-.3.6-.8.5-1.3Z" />
+    </IconShell>
+  );
+}
+
+export function CompassIcon({ className }) {
+  return (
+    <IconShell className={className}>
+      <circle cx="12" cy="12" r="9" />
+      <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" />
+    </IconShell>
+  );
+}
+
+export function SparePartsIcon({ className }) {
+  return (
+    <IconShell className={className}>
+      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+      <line x1="12" y1="22.08" x2="12" y2="12" />
+    </IconShell>
+  );
+}
+
+
+
