@@ -42,21 +42,24 @@ export default function SiteFooter() {
             </p>
 
             <div className="flex items-center gap-3">
-              <a
-                href="#home"
+              <Link
+                href="/jj-marine"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
+                aria-label="Home"
               >
                 <LanguageIcon className="h-5 w-5" />
-              </a>
-              <a
-                href="#about"
+              </Link>
+              <Link
+                href="/about-us"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
+                aria-label="About Us"
               >
                 <PersonIcon className="h-5 w-5" />
-              </a>
+              </Link>
               <a
                 href="mailto:info@jjmarinelogistics.com"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
+                aria-label="Email Us"
               >
                 <MailIcon className="h-5 w-5" />
               </a>
@@ -94,9 +97,9 @@ export default function SiteFooter() {
               <li className="flex gap-3">
                 <LocationIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
                 <span>
-                  Maritime Center, Kochi,
+                  Kuttanad, Kuttanad Taluk,
                   <br />
-                  Kerala, India - 682001
+                  Alappuzha, Kerala - 689573
                 </span>
               </li>
               <li className="flex gap-3">
@@ -120,18 +123,18 @@ export default function SiteFooter() {
             </p>
 
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-[0.82rem] text-white/55">
-              <a href="#contact" className="transition-colors hover:text-marine-gold">
+              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
                 Privacy Policy
-              </a>
-              <a href="#contact" className="transition-colors hover:text-marine-gold">
+              </Link>
+              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
                 Terms of Service
-              </a>
-              <a href="#contact" className="transition-colors hover:text-marine-gold">
+              </Link>
+              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
                 Cookie Policy
-              </a>
-              <a href="#contact" className="transition-colors hover:text-marine-gold">
+              </Link>
+              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
                 Global Compliance
-              </a>
+              </Link>
             </div>
           </div>
         </div>

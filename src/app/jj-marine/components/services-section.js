@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import {
   ChevronDownIcon,
   SailIcon,
@@ -134,6 +135,14 @@ function ServiceCard({ service, isOpen, onToggle }) {
               </div>
             ))}
           </div>
+          <div className="mt-6 border-t border-gray-100 pt-4 flex justify-end">
+            <Link
+              href="/contact-us"
+              className="inline-flex items-center gap-2 rounded-lg bg-marine-primary px-4 py-2 text-[0.85rem] font-bold text-white transition-all hover:bg-marine-secondary"
+            >
+              Request {service.title} &rarr;
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -171,6 +180,15 @@ export default function ServicesSection() {
               }
             />
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-marine-gold to-marine-gold-soft px-6 py-3.5 text-[0.92rem] font-bold text-marine-primary shadow-[0_10px_25px_rgba(212,175,55,0.25)] transition-all hover:scale-[1.02]"
+          >
+            Explore All Services &amp; Solutions &rarr;
+          </Link>
         </div>
       </div>
     </section>

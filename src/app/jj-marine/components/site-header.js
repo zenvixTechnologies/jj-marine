@@ -85,7 +85,13 @@ export default function SiteHeader() {
           </nav>
 
           {/* Desktop Action Button / Mobile Menu Toggle */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
+            <Link
+              href="/careers"
+              className="hidden md:inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-marine-gold to-marine-gold-soft px-4 py-2 text-[0.8rem] font-bold text-marine-primary shadow-[0_4px_12px_rgba(212,175,55,0.2)] transition-transform hover:scale-105"
+            >
+              Apply Now
+            </Link>
             <button
               onClick={() => setIsDrawerOpen(true)}
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-marine-primary/10 bg-white/50 text-marine-primary transition-colors hover:bg-white md:hidden"

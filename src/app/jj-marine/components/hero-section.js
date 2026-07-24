@@ -80,7 +80,7 @@ export default function HeroSection() {
 
           <div className="mt-7 flex flex-wrap items-center gap-3 md:gap-4">
             <Link
-              href="#services"
+              href="/careers"
               className="group inline-flex items-center gap-2 rounded-[10px] bg-gradient-to-r from-marine-gold to-marine-gold-soft px-5 py-3.5 text-[0.9rem] font-bold text-marine-primary shadow-[0_18px_30px_rgba(212,175,55,0.22)] transition-transform hover:scale-[1.02]"
             >
               Apply for Jobs
@@ -88,14 +88,14 @@ export default function HeroSection() {
             </Link>
 
             <Link
-              href="#services"
+              href="/services"
               className="rounded-[10px] border border-white/30 px-5 py-3.5 text-[0.9rem] font-bold text-white backdrop-blur-sm transition-colors hover:border-marine-gold hover:bg-white/5"
             >
               Request Services
             </Link>
 
             <Link
-              href="#contact"
+              href="/contact-us"
               className="px-2 py-3.5 text-[0.9rem] font-bold text-white/72 transition-colors hover:text-marine-gold"
             >
               Contact Us

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowRightIcon } from "./icons";
 
 const milestones = [
@@ -90,13 +91,13 @@ export default function AboutSection() {
             ))}
           </div>
 
-          <a
-            href="#services"
+          <Link
+            href="/about-us"
             className="group inline-flex items-center gap-2 text-[0.95rem] font-bold text-marine-secondary transition-colors hover:text-marine-gold"
           >
             Discover Our Full Story
             <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
         </div>
       </div>
     </section>
