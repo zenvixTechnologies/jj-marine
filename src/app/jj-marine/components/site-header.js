@@ -85,14 +85,7 @@ export default function SiteHeader() {
           </nav>
 
           {/* Desktop Action Button / Mobile Menu Toggle */}
-          {/* <div className="flex items-center gap-4">
-            <Link
-              href="/services"
-              className="hidden md:inline-block rounded-[10px] bg-gradient-to-r from-marine-gold to-marine-gold-soft px-4 py-2 text-[0.82rem] font-bold text-marine-primary shadow-[0_10px_24px_rgba(212,175,55,0.28)] transition-transform hover:scale-[1.02]"
-            >
-              Student Placements
-            </Link>
-
+          <div className="flex items-center gap-4">
             <button
               onClick={() => setIsDrawerOpen(true)}
               className="flex h-9 w-9 items-center justify-center rounded-lg border border-marine-primary/10 bg-white/50 text-marine-primary transition-colors hover:bg-white md:hidden"
@@ -100,7 +93,7 @@ export default function SiteHeader() {
             >
               <Menu size={20} />
             </button>
-          </div> */}
+          </div>
         </div>
       </header>
 
@@ -170,17 +163,6 @@ export default function SiteHeader() {
             );
           })}
         </nav>
-
-        {/* Drawer Footer / CTA */}
-        {/* <div className="p-4 border-t border-gray-100 bg-gray-50/50">
-          <Link
-            href="/services"
-            onClick={() => setIsDrawerOpen(false)}
-            className="block w-full text-center rounded-[10px] bg-gradient-to-r from-marine-gold to-marine-gold-soft py-3 text-[0.85rem] font-bold text-marine-primary shadow-md transition-transform hover:scale-[1.02]"
-          >
-            Student Placements
-          </Link>
-        </div> */}
       </div>
     </>
   );

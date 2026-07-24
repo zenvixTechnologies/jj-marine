@@ -35,13 +35,6 @@ export default function SiteHeader() {
             </Link>
           ))}
         </nav>
-
-        <Link
-          href="/jj-marine#student-placements"
-          className="rounded-full bg-gradient-to-r from-[#d4af37] to-[#f1d592] px-5 py-2 text-[0.82rem] font-bold text-[#0f3d3e] shadow-[0_10px_20px_rgba(212,175,55,0.2)] transition-transform hover:scale-[1.03]"
-        >
-          Student Placements
-        </Link>
       </div>
     </header>
   );
