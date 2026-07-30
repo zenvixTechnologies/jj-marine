@@ -123,8 +123,8 @@ export default function PrivacyPolicyPage() {
               </p>
               <div className="pt-2 text-sm font-semibold text-[#d4af37] space-y-1">
                 <p>Email: <a href="mailto:info.jjmarine@gmail.com" className="underline hover:text-white">info.jjmarine@gmail.com</a></p>
-                <p>Phone: +91 9447988100</p>
-                <p>Address: Kuttanad, Alappuzha, Kerala - 689573</p>
+                <p>Phone: <a href="tel:+919447988100" className="underline hover:text-white">+91 9447988100</a></p>
+                <p>Address: E4 Tower, First Floor, Pacha-Edathua - 689573</p>
               </div>
             </div>
           </div>

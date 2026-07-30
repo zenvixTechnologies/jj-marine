@@ -89,7 +89,7 @@ const jsonLd = {
       telephone: "+91-9447988100",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Kuttanad, Kuttanad Taluk",
+        streetAddress: "E4 Tower, First Floor, Pacha-Edathua",
         addressLocality: "Alappuzha",
         addressRegion: "Kerala",
         postalCode: "689573",

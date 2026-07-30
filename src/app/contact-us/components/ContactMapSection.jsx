@@ -35,9 +35,9 @@ export default function ContactMapSection() {
                 <div>
                   <h4 className="font-bold text-marine-primary text-base">Headquarters</h4>
                   <p className="text-sm leading-relaxed text-marine-text">
-                    Kuttanad, Kuttanad Taluk,
+                    E4 Tower, First Floor,
                     <br />
-                    Alappuzha, Kerala - 689573
+                    Pacha-Edathua - 689573
                   </p>
                 </div>
               </div>
@@ -49,9 +49,9 @@ export default function ContactMapSection() {
                 <div>
                   <h4 className="font-bold text-marine-primary text-base">Phone Support</h4>
                   <p className="text-sm leading-relaxed text-marine-text">
-                    +91 484 234 5678
-                    <br />
-                    +91 989 500 1234
+                    <a href="tel:+919447988100" className="hover:text-marine-gold transition-colors">
+                      +91 9447988100
+                    </a>
                   </p>
                 </div>
               </div>

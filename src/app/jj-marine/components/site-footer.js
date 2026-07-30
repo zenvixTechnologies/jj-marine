@@ -97,14 +97,16 @@ export default function SiteFooter() {
               <li className="flex gap-3">
                 <LocationIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
                 <span>
-                  Kuttanad, Kuttanad Taluk,
+                  E4 Tower, First Floor,
                   <br />
-                  Alappuzha, Kerala - 689573
+                  Pacha-Edathua - 689573
                 </span>
               </li>
               <li className="flex gap-3">
                 <PhoneIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
-                <span>+91 (484) 2345 6789</span>
+                <a href="tel:+919447988100" className="hover:text-marine-gold transition-colors">
+                  +91 9447988100
+                </a>
               </li>
               <li className="flex gap-3">
                 <MailIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
