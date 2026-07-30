@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,6 +14,15 @@ import {
 } from "./icons";
 
 export default function SiteFooter() {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText("https://jjmarinelogistics.com").then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
   return (
     <footer id="contact" className="bg-marine-primary text-white">
       <div className="mx-auto w-full max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
@@ -42,20 +54,22 @@ export default function SiteFooter() {
             </p>
 
             <div className="flex items-center gap-3">
-              <Link
-                href="/jj-marine"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
-                aria-label="Home"
-              >
-                <LanguageIcon className="h-5 w-5" />
-              </Link>
-              <Link
-                href="/about-us"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
-                aria-label="About Us"
-              >
-                <PersonIcon className="h-5 w-5" />
-              </Link>
+              <div className="relative">
+                <button
+                  onClick={handleCopyLink}
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary cursor-pointer"
+                  aria-label="Copy Website Link"
+                  title="Copy https://jjmarinelogistics.com"
+                >
+                  <LanguageIcon className="h-5 w-5" />
+                </button>
+                {copied && (
+                  <span className="absolute -top-9 left-1/2 -translate-x-1/2 whitespace-nowrap rounded bg-marine-gold px-2.5 py-1 text-[0.7rem] font-bold text-marine-primary shadow-lg animate-bounce">
+                    Link Copied!
+                  </span>
+                )}
+              </div>
+
               <a
                 href="mailto:info.jjmarine@gmail.com"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
@@ -104,7 +118,7 @@ export default function SiteFooter() {
               </li>
               <li className="flex gap-3">
                 <PhoneIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
-                <span>+91 (484) 2345 6789</span>
+                <span>+91 9447988100</span>
               </li>
               <li className="flex gap-3">
                 <MailIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
@@ -125,18 +139,13 @@ export default function SiteFooter() {
             </p>
 
             <div className="flex flex-wrap gap-x-6 gap-y-2 text-[0.82rem] text-white/55">
-              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
+              <Link href="/privacy-policy" className="transition-colors hover:text-marine-gold">
                 Privacy Policy
               </Link>
-              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
+              <Link href="/terms-of-service" className="transition-colors hover:text-marine-gold">
                 Terms of Service
               </Link>
-              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
-                Cookie Policy
-              </Link>
-              <Link href="/contact-us" className="transition-colors hover:text-marine-gold">
-                Global Compliance
-              </Link>
+
             </div>
           </div>
         </div>

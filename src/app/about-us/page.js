@@ -1,5 +1,5 @@
-import SiteHeader from "../jj-marine/components/site-header";
-import SiteFooter from "../jj-marine/components/site-footer";
+import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 import AboutHero from "./components/AboutHero";
 import DubaiExpansionModal from "./components/DubaiExpansionModal";
 import MissionVisionSection from "./components/MissionVisionSection";
@@ -8,6 +8,9 @@ import LeadershipSection from "./components/LeadershipSection";
 export const metadata = {
   title: "About Us | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
   description: "Learn about JJ Marine Logistics & HR Solutions Pvt. Ltd.'s mission, marine logistics, HR support, visa assistance, Dubai expansion, and leadership team led by Jobin Joseph.",
+  alternates: {
+    canonical: "/about-us",
+  },
 };
 
 export default function AboutUsPage() {

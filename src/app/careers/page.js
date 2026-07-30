@@ -1,14 +1,17 @@
 // src/app/careers/page.js
 
-import SiteFooter from "../jj-marine/components/site-footer";
-import SiteHeader from "../jj-marine/components/site-header";
+import SiteFooter from "@/components/site-footer";
+import SiteHeader from "@/components/site-header";
 import CareersHero from "./components/CareersHero";
 import CareerPortal from "./components/RecruitmentPortal";
 import PillarsExcellence from "./components/PillarsExcellence";
 
 export const metadata = {
-  title: "Careers | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
-  description: "Connect with world-class maritime careers and placements with JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  title: "Careers & Recruitment | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  description: "Explore world-class maritime careers, officer deployments, and cadet placement solutions with JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  alternates: {
+    canonical: "/careers",
+  },
 };
 
 export default function CareersPage() {

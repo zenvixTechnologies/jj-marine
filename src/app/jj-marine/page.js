@@ -1,27 +1,5 @@
-import AboutSection from "./components/about-section";
-import HeroSection from "./components/hero-section";
-import ServicesSection from "./components/services-section";
-import SiteFooter from "./components/site-footer";
-import SiteHeader from "./components/site-header";
+import { redirect } from "next/navigation";
 
-export const metadata = {
-  title: "JJ Marine Logistics & HR Solutions Pvt. Ltd. | Global Maritime Excellence",
-  description:
-    "Maritime logistics, HR solutions, and student placements by JJ Marine Logistics & HR Solutions Pvt. Ltd.",
-};
-
-export default function JJMarinePage() {
-  return (
-    <div
-      className="font-body min-h-screen overflow-x-hidden bg-marine-surface text-marine-primary"
-    >
-      <SiteHeader />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-      </main>
-      <SiteFooter />
-    </div>
-  );
+export default function JJMarineRedirect() {
+  redirect("/");
 }

@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { Users, Mail, Award, Briefcase } from "lucide-react";
+import { Users, Mail, Award, Briefcase, User } from "lucide-react";
 
 const teamMembers = [
   {
     name: "Jobin Joseph",
     role: "Founder & Managing Director",
     subRole: "Operation Head",
-    image: "/images/team/founder.png",
+    image: "/images/team/jobin_joseph.jpg",
     bio: "Driving the strategic vision, global partnerships, and overall operations of JJ Marine Logistics & HR Solutions Pvt. Ltd.",
     isFounder: true,
   },
@@ -16,7 +16,7 @@ const teamMembers = [
     name: "Manu Murugan",
     role: "Marine Head",
     subRole: "Vessel & Fleet Operations",
-    image: "/images/team/marine_head.png",
+    image: "/images/team/manu_murugan.jpg",
     bio: "Directing offshore marine operations, technical crew deployment, and port agency logistics.",
   },
   {
@@ -25,6 +25,8 @@ const teamMembers = [
     subRole: "Supply Chain & Transit",
     image: "/images/team/logistics_head.png",
     bio: "Overseeing multi-modal freight management, customs clearance, and global cargo routing.",
+    isAvatar: true,
+    initials: "SA",
   },
   {
     name: "Dr. Juby Jobin",
@@ -32,6 +34,8 @@ const teamMembers = [
     subRole: "Talent & Financial Governance",
     image: "/images/team/hr_head.png",
     bio: "Leading human capital recruitment, corporate administration, and financial compliance.",
+    isAvatar: true,
+    initials: "JJ",
   },
   {
     name: "Dr. Ambily Thankachan (PhD)",
@@ -39,12 +43,14 @@ const teamMembers = [
     subRole: "Meteorological & Route Intelligence",
     image: "/images/team/weather_manager.png",
     bio: "Specializing in oceanographic climate analysis, marine forecasting, and voyage route advisory.",
+    isAvatar: true,
+    initials: "AT",
   },
   {
-    name: "Digital & AI Systems Manager",
+    name: "Albin Anto Devasia",
     role: "IT and Digital Manager",
     subRole: "Digital Transformation & AI",
-    image: "/images/team/it_manager.png",
+    image: "/images/team/albin_anto.jpg",
     bio: "Architecting cloud infrastructure, digital recruitment platforms, and AI-driven automation.",
   },
 ];
@@ -83,17 +89,35 @@ export default function LeadershipSection() {
               <div>
                 {/* Image Container */}
                 <div className="relative mb-6 aspect-[4/4] w-full overflow-hidden rounded-xl bg-gray-100 shadow-md">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e]/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                  
+                  {member.isAvatar ? (
+                    <div className="relative flex h-full w-full items-center justify-center bg-gradient-to-br from-[#0a2728] via-[#0f3d3e] to-[#1e6f5c]">
+                      {/* Subtle Background Pattern */}
+                      <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]" />
+
+                      {/* Avatar Badge */}
+                      <div className="relative flex h-28 w-28 items-center justify-center rounded-full border-2 border-[#d4af37]/60 bg-[#071f20] shadow-2xl transition-transform duration-500 group-hover:scale-105 group-hover:border-[#d4af37]">
+                        <div className="flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-[#0f3d3e] to-[#1e6f5c]">
+                          <User className="h-12 w-12 text-[#d4af37]" />
+                        </div>
+                      </div>
+
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e]/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    </div>
+                  ) : (
+                    <>
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e]/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                    </>
+                  )}
+
                   {/* Badge */}
-                  <div className="absolute top-3 right-3">
+                  <div className="absolute top-3 right-3 z-10">
                     <span className="rounded-full bg-[#0f3d3e]/80 backdrop-blur-md px-3 py-1 text-[0.68rem] font-bold uppercase tracking-wider text-[#d4af37] border border-[#d4af37]/30">
                       {member.role}
                     </span>

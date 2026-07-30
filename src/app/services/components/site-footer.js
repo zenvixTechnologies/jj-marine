@@ -87,14 +87,14 @@ export default function SiteFooter() {
           </h4>
           <ul className="space-y-4 text-[0.9rem] text-white/70">
             <li>
-              <a href="#" className="hover:text-[#d4af37]">
+              <Link href="/privacy-policy" className="hover:text-[#d4af37]">
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:text-[#d4af37]">
+              <Link href="/terms-of-service" className="hover:text-[#d4af37]">
                 Terms of Service
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:text-[#d4af37]">
@@ -120,13 +120,12 @@ export default function SiteFooter() {
                 42nd Floor, Singapore
               </span>
             </li>
-            <li className="flex gap-3">
-              <PhoneIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
-              <span>Phone: +1 (800) MAR-LINE</span>
-            </li>
+
             <li className="flex gap-3">
               <MailIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
-              <span>Email: contact@jjmarine.com</span>
+              <a href="mailto:info.jjmarine@gmail.com" className="hover:text-[#d4af37] transition-colors">
+                info.jjmarine@gmail.com
+              </a>
             </li>
           </ul>
         </div>

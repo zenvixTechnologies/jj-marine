@@ -63,28 +63,14 @@ export default function ContactMapSection() {
                 <div>
                   <h4 className="font-bold text-marine-primary text-base">Email Inquiries</h4>
                   <p className="text-sm leading-relaxed text-marine-text">
-                    info@jjmarinesolutions.com
-                    <br />
-                    hr@jjmarinesolutions.com
+                    <a href="mailto:info.jjmarine@gmail.com" className="hover:text-marine-gold transition-colors">
+                      info.jjmarine@gmail.com
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="flex gap-4 pt-6">
-              <a
-                href="#"
-                className="h-10 w-10 rounded-full bg-marine-secondary flex items-center justify-center text-white hover:scale-110 transition-transform"
-              >
-                <FaLinkedin size={18} />
-              </a>
-              <a
-                href="#"
-                className="h-10 w-10 rounded-full bg-marine-secondary flex items-center justify-center text-white hover:scale-110 transition-transform"
-              >
-                <FaTwitter size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Middle & Right: Map */}

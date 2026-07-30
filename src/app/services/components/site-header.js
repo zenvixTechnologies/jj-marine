@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function SiteHeader() {
   const navItems = [
-    { label: "Home", href: "/jj-marine" },
+    { label: "Home", href: "/" },
     { label: "About Us", href: "/about-us" },
     { label: "Services", href: "/services", active: true },
     { label: "Careers", href: "/careers" },
@@ -13,7 +13,7 @@ export default function SiteHeader() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#1e6f5c]/10 bg-[rgba(255,255,255,0.85)] backdrop-blur-xl shadow-[0_10px_30px_rgba(15,61,62,0.05)]">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-4 py-4 md:px-6">
         <Link
-          href="/jj-marine"
+          href="/"
           className="font-display text-[1.1rem] font-extrabold uppercase tracking-tighter text-[#0f3d3e]"
         >
           JJ Marine

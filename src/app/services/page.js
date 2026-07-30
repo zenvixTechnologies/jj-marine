@@ -4,12 +4,15 @@ import MultiCardGrid from "./components/multi-card-grid";
 import TrainingSection from "./components/training-section";
 
 import WhyPartnersSection from "./components/why-partners-section";
-import SiteHeader from "../jj-marine/components/site-header";
-import SiteFooter from "../jj-marine/components/site-footer";
+import SiteHeader from "@/components/site-header";
+import SiteFooter from "@/components/site-footer";
 
 export const metadata = {
   title: "Services | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
-  description: "Detailed services showcase for JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  description: "Comprehensive maritime services including marine logistics, vessel manning, student placement, and offshore crew operations by JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+  alternates: {
+    canonical: "/services",
+  },
 };
 
 export default function ServicesPage() {
