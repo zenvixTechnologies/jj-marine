@@ -1,7 +1,6 @@
 // components/IndustryCard.jsx
 
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
 
 export default function IndustryCard({
   icon,
@@ -23,14 +22,6 @@ export default function IndustryCard({
       <p className="mb-6 text-sm text-marine-text leading-relaxed">
         {description}
       </p>
-
-      <button className="flex items-center gap-2 font-bold text-marine-gold text-sm cursor-pointer">
-        Explore Services
-        <ArrowRight
-          size={16}
-          className="transition-transform group-hover:translate-x-2"
-        />
-      </button>
 
       <div className="relative mt-8 h-40 overflow-hidden rounded-lg">
         <Image

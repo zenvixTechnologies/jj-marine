@@ -11,7 +11,6 @@ import {
   Cpu,
   Factory,
   GraduationCap,
-  ArrowRight,
 } from "lucide-react";
 
 const industries = [
@@ -104,14 +103,6 @@ export default function IndustriesSection() {
               <p className="text-[0.88rem] leading-relaxed text-marine-text/90">
                 {industry.description}
               </p>
-
-              <button className="mt-5 flex items-center gap-1.5 font-bold text-marine-gold text-xs transition-colors group-hover:text-marine-primary cursor-pointer">
-                Explore Services
-                <ArrowRight
-                  size={12}
-                  className="transition-transform group-hover:translate-x-1"
-                />
-              </button>
             </div>
           ))}
         </div>

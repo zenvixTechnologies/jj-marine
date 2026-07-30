@@ -6,7 +6,7 @@ const milestones = [
   {
     step: "1",
     title: "The Inception",
-    text: "Starting in Kochi with a vision to streamline maritime human resources and logistics in Southern India.",
+    text: "Starting in Alappuzha (Kuttanad) with a vision to streamline maritime human resources and logistics in Southern India.",
   },
   {
     step: "2",
@@ -28,7 +28,7 @@ export default function AboutSection() {
           <div className="relative aspect-square overflow-hidden rounded-[28px] shadow-[0_28px_65px_rgba(19,35,31,0.16)]">
             <Image
               src="/images/home.png"
-              alt="Maritime office in Kochi"
+              alt="Maritime office in Alappuzha"
               className="object-cover"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -37,11 +37,10 @@ export default function AboutSection() {
 
           <div className="absolute -bottom-10 -right-6 hidden w-full max-w-[22rem] rounded-[20px] bg-white/75 p-6 shadow-[0_22px_50px_rgba(19,35,31,0.15)] backdrop-blur-md md:block">
             <h4 className="font-display text-[1.15rem] font-semibold text-marine-secondary">
-              Our Kochi Roots
+              Our Alappuzha HQ
             </h4>
             <p className="mt-2 text-[0.95rem] leading-6 text-marine-text">
-              Strategically located in Kochi&apos;s maritime hub, we serve as a
-              gateway for global maritime talent and logistical operations.
+              Headquartered in Kuttanad, Alappuzha, Kerala - 689573, serving as a gateway for global maritime talent and logistical operations.
             </p>
           </div>
         </div>
@@ -55,8 +54,7 @@ export default function AboutSection() {
             <p className="mt-4 max-w-[44rem] text-[1rem] leading-7 text-marine-text md:text-[1.05rem]">
               Founded on the principles of integrity and operational
               excellence, JJ Marine Logistics &amp; HR Solutions Pvt. Ltd. has evolved
-              from a local Kochi maritime agency into a global maritime
-              powerhouse.
+              from Alappuzha into a global maritime powerhouse.
             </p>
           </div>
 

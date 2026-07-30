@@ -171,26 +171,6 @@ export default function CareerPortal() {
               {/* Background Accent */}
               <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-marine-gold opacity-10 rounded-full blur-3xl"></div>
             </div>
-
-            <div className="glass-card p-8 rounded-3xl border border-marine-primary/10 shadow-lg bg-white/30">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-marine-gold relative">
-                  <Image
-                    src="/images/captain.jpg"
-                    alt="Captain David Sterling"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div>
-                  <p className="font-bold text-marine-primary text-base">Captain David Sterling</p>
-                  <p className="text-xs text-marine-text/70">Senior Fleet Advisor</p>
-                </div>
-              </div>
-              <blockquote className="text-marine-secondary italic text-sm leading-relaxed">
-                "JJ Marine doesn't just find you a job; they navigate your entire career path with precision and integrity. Their global reach is unmatched."
-              </blockquote>
-            </div>
           </div>
         </div>
       </div>

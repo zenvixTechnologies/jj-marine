@@ -11,7 +11,7 @@ export const metadata = {
     template: "%s | JJ Marine Logistics & HR Solutions",
   },
   description:
-    "Leading provider of global maritime logistics, vessel manning, seafarer recruitment, and student placements based in Kochi, India and expanding globally.",
+    "Leading provider of global maritime logistics, vessel manning, seafarer recruitment, and student placements based in Alappuzha, India and expanding globally.",
   keywords: [
     "JJ Marine",
     "Maritime Logistics",
@@ -20,7 +20,7 @@ export const metadata = {
     "Offshore Logistics",
     "Ship Manning Agency",
     "Maritime HR Solutions",
-    "Kochi Maritime Company",
+    "Alappuzha Maritime Company",
   ],
   authors: [{ name: "JJ Marine Logistics & HR Solutions Pvt. Ltd." }],
   creator: "JJ Marine Logistics & HR Solutions Pvt. Ltd.",

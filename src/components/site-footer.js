@@ -49,7 +49,7 @@ export default function SiteFooter() {
             </div>
             <p className="max-w-[18rem] text-[0.92rem] leading-7 text-white/72">
               Empowering global maritime trade through strategic excellence in
-              logistics and human resource management. Based in Kochi, serving
+              logistics and human resource management. Based in Alappuzha, serving
               the world.
             </p>
 
