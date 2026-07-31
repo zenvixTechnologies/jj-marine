@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about-section";
+import DirectorsMessageSection from "@/components/directors-message-section";
 import HeroSection from "@/components/hero-section";
 import ServicesSection from "@/components/services-section";
 import SiteFooter from "@/components/site-footer";
@@ -20,6 +21,7 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <AboutSection />
+        <DirectorsMessageSection />
         <ServicesSection />
       </main>
       <SiteFooter />
