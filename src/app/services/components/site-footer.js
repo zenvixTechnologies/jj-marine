@@ -115,16 +115,32 @@ export default function SiteFooter() {
             <li className="flex gap-3">
               <LocationIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
               <span>
-                Headquarters: Global Maritime Tower,
+                E4 Tower, First Floor,
                 <br />
-                42nd Floor, Singapore
+                Pacha-Edathua - 689573, Alappuzha
               </span>
             </li>
-
+            <li className="flex gap-3">
+              <PhoneIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
+              <a href="tel:+919447988100" className="hover:text-[#d4af37] transition-colors">
+                +91 9447988100
+              </a>
+            </li>
             <li className="flex gap-3">
               <MailIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
               <a href="mailto:info.jjmarine@gmail.com" className="hover:text-[#d4af37] transition-colors">
                 info.jjmarine@gmail.com
+              </a>
+            </li>
+            <li className="flex gap-3">
+              <LanguageIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
+              <a
+                href="https://jjmarinelogistics.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#d4af37] transition-colors"
+              >
+                jjmarinelogistics.com
               </a>
             </li>
           </ul>

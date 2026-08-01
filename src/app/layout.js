@@ -13,13 +13,18 @@ export const metadata = {
   description:
     "Leading provider of global maritime logistics, vessel manning, seafarer recruitment, and student placements based in Alappuzha, India and expanding globally.",
   keywords: [
+    "jjmarinelogistics.com",
     "JJ Marine",
+    "JJ Marine Logistics",
+    "JJ Marine HR Solutions",
+    "JJ Marine Logistics and HR Solutions",
+    "Jobin Joseph JJ Marine",
+    "Jobin Joseph Director",
     "Maritime Logistics",
     "Seafarer Recruitment",
     "Crew Management",
     "Offshore Logistics",
     "Ship Manning Agency",
-    "Maritime HR Solutions",
     "Alappuzha Maritime Company",
   ],
   authors: [{ name: "JJ Marine Logistics & HR Solutions Pvt. Ltd." }],
@@ -34,9 +39,9 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+    title: "JJ Marine Logistics & HR Solutions Pvt. Ltd. | Official Website",
     description:
-      "Global maritime logistics, offshore support, seafarer crew management, and student placements.",
+      "Official website of JJ Marine Logistics & HR Solutions. Global maritime logistics, offshore support, seafarer crew management, and student placements.",
     siteName: "JJ Marine Logistics",
     images: [
       {
@@ -65,7 +70,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "google-site-verification-id",
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "WzMMLZ-qElovJpdQjt-rTHK0rMJONiPJQ3uHNLROTiU",
   },
 };
 
@@ -83,10 +88,16 @@ const jsonLd = {
       "@type": "Organization",
       "@id": `${siteUrl}/#organization`,
       name: "JJ Marine Logistics & HR Solutions Pvt. Ltd.",
+      alternateName: ["JJ Marine", "JJ Marine Logistics", "jjmarinelogistics.com"],
       url: siteUrl,
       logo: `${siteUrl}/images/logo.png`,
       email: "info.jjmarine@gmail.com",
       telephone: "+91-9447988100",
+      founder: {
+        "@type": "Person",
+        name: "Jobin Joseph",
+        jobTitle: "Managing Director",
+      },
       address: {
         "@type": "PostalAddress",
         streetAddress: "E4 Tower, First Floor, Pacha-Edathua",
@@ -104,6 +115,7 @@ const jsonLd = {
       "@id": `${siteUrl}/#website`,
       url: siteUrl,
       name: "JJ Marine Logistics",
+      alternateName: "jjmarinelogistics.com",
       publisher: {
         "@id": `${siteUrl}/#organization`,
       },

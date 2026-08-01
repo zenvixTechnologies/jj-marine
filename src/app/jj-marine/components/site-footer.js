@@ -99,7 +99,7 @@ export default function SiteFooter() {
                 <span>
                   E4 Tower, First Floor,
                   <br />
-                  Pacha-Edathua - 689573
+                  Pacha-Edathua - 689573, Alappuzha
                 </span>
               </li>
               <li className="flex gap-3">
@@ -112,6 +112,17 @@ export default function SiteFooter() {
                 <MailIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
                 <a href="mailto:info.jjmarine@gmail.com" className="hover:text-marine-gold transition-colors">
                   info.jjmarine@gmail.com
+                </a>
+              </li>
+              <li className="flex gap-3">
+                <LanguageIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
+                <a
+                  href="https://jjmarinelogistics.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-marine-gold transition-colors"
+                >
+                  jjmarinelogistics.com
                 </a>
               </li>
             </ul>
