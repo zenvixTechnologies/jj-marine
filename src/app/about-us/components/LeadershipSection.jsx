@@ -8,7 +8,8 @@ const teamMembers = [
     name: "Jobin Joseph",
     role: "Founder & Managing Director",
     subRole: "Operation Head",
-    image: "/images/team/jobin_joseph_studio.png",
+    image: "/images/team/jobin_joseph_v2.png",
+    objectPosition: "50% 18%",
     bio: "Driving the strategic vision, global partnerships, and overall operations of JJ Marine Logistics & HR Solutions Pvt. Ltd.",
     isFounder: true,
   },
@@ -17,13 +18,15 @@ const teamMembers = [
     role: "Marine Head",
     subRole: "Vessel & Fleet Operations",
     image: "/images/team/manu_murugan.jpg",
+    objectPosition: "50% 20%",
     bio: "Directing offshore marine operations, technical crew deployment, and port agency logistics.",
   },
   {
     name: "Capt. Sooraj Andiyan",
     role: "Logistics Head",
     subRole: "Supply Chain & Transit",
-    image: "/images/team/sooraj_andiyan.jpg",
+    image: "/images/team/capt_sooraj_andiyan_v2.jpg",
+    objectPosition: "50% 20%",
     bio: "Overseeing multi-modal freight management, customs clearance, and global cargo routing.",
   },
   {
@@ -109,6 +112,7 @@ export default function LeadershipSection() {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        style={{ objectPosition: member.objectPosition || "50% 20%" }}
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#0f3d3e]/70 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                     </>

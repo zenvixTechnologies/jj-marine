@@ -3,16 +3,12 @@ import Image from "next/image";
 import {
   AnchorIcon,
   ArrowRightIcon,
-  GlobeIcon,
-  VerifiedIcon,
   UsersIcon,
 } from "./icons";
 
 const highlights = [
-  { icon: VerifiedIcon, title: "MLC 2006", label: "Certified Manning", delay: "0s" },
-  { icon: GlobeIcon, title: "Global Fleet", label: "Worldwide Manning", delay: "0.5s" },
-  { icon: AnchorIcon, title: "Leadership", label: "Active Officer Expertise", delay: "1s" },
-  { icon: UsersIcon, title: "End-to-End", label: "Crewing & Logistics", delay: "1.5s" },
+  { icon: AnchorIcon, title: "Leadership", label: "Active Officer Expertise", delay: "0s" },
+  { icon: UsersIcon, title: "End-to-End", label: "Crewing & Logistics", delay: "0.5s" },
 ];
 
 function HighlightCard({ icon: Icon, title, label, delay }) {
