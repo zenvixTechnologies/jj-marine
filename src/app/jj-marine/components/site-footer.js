@@ -88,7 +88,7 @@ export default function SiteFooter() {
               </li>
               <li>
                 <Link href="/services#houseboat-services" className="transition-colors hover:text-white">
-                  Training and Inspection
+                  House Boat Services (Training and Inspection)
                 </Link>
               </li>
               <li>
