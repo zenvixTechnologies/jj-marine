@@ -71,7 +71,7 @@ export default function SiteFooter() {
               </div>
 
               <a
-                href="mailto:info.jjmarine@gmail.com"
+                href="mailto:info.hr@jjmarinelogistics.com"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-marine-gold hover:text-marine-primary"
                 aria-label="Email Us"
               >
@@ -84,7 +84,7 @@ export default function SiteFooter() {
             <h4 className="font-display text-[1.05rem] font-semibold">
               Services
             </h4>
-            <ul className="space-y-3 text-[0.92rem] text-white/70">
+            <ul className="space-y-2.5 text-[0.92rem] text-white/70">
               <li>
                 <Link href="/services#marine-logistics" className="transition-colors hover:text-white">
                   Marine Logistics
@@ -93,6 +93,26 @@ export default function SiteFooter() {
               <li>
                 <Link href="/services#hr-solutions" className="transition-colors hover:text-white">
                   HR Solutions
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#marine-recruitment" className="transition-colors hover:text-white">
+                  Marine Recruitment
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#houseboat-services" className="transition-colors hover:text-white">
+                  Houseboat Services (Training &amp; LSA/FFA)
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#dredging-support" className="transition-colors hover:text-white">
+                  River &amp; Canal Dredging
+                </Link>
+              </li>
+              <li>
+                <Link href="/services#seafarers-insurance" className="transition-colors hover:text-white">
+                  Seafarers Insurance Support
                 </Link>
               </li>
               <li>
@@ -124,8 +144,8 @@ export default function SiteFooter() {
               </li>
               <li className="flex gap-3">
                 <MailIcon className="mt-0.5 h-5 w-5 text-marine-gold" />
-                <a href="mailto:info.jjmarine@gmail.com" className="hover:text-marine-gold transition-colors">
-                  info.jjmarine@gmail.com
+                <a href="mailto:info.hr@jjmarinelogistics.com" className="hover:text-marine-gold transition-colors">
+                  info.hr@jjmarinelogistics.com
                 </a>
               </li>
               <li className="flex gap-3">

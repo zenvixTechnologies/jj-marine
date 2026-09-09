@@ -122,7 +122,7 @@ export default function PrivacyPolicyPage() {
                 If you have questions regarding this Privacy Policy, wish to update your records, or request data removal, please contact our administrative desk:
               </p>
               <div className="pt-2 text-sm font-semibold text-[#d4af37] space-y-1">
-                <p>Email: <a href="mailto:info.jjmarine@gmail.com" className="underline hover:text-white">info.jjmarine@gmail.com</a></p>
+                <p>Email: <a href="mailto:info.hr@jjmarinelogistics.com" className="underline hover:text-white">info.hr@jjmarinelogistics.com</a></p>
                 <p>Phone: <a href="tel:+919447988100" className="underline hover:text-white">+91 9447988100</a></p>
                 <p>Address: E4 Tower, First Floor, Pacha-Edathua - 689573</p>
               </div>

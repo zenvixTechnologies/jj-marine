@@ -11,6 +11,8 @@ import {
   Cpu,
   Factory,
   GraduationCap,
+  Anchor,
+  Waves,
 } from "lucide-react";
 
 const industries = [
@@ -23,6 +25,16 @@ const industries = [
     title: "Marine & Offshore",
     description: "Technical support and staffing services for rigs, vessels, and offshore operations.",
     icon: <Compass size={24} />,
+  },
+  {
+    title: "Tourism & Houseboat Assistance",
+    description: "Our inspection and training support helps houseboat operators improve safety standards, staff awareness, operational practices and inspection readiness.",
+    icon: <Anchor size={24} />,
+  },
+  {
+    title: "River & Canal Dredging Support",
+    description: "Supporting Inland Waterways Through Efficient Dredging & Marine Logistics.",
+    icon: <Waves size={24} />,
   },
   {
     title: "Logistics & Transportation",

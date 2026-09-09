@@ -62,7 +62,7 @@ export default function SiteFooter() {
           <h4 className="mb-6 text-[0.95rem] font-bold text-white">
             Expertise
           </h4>
-          <ul className="space-y-4 text-[0.9rem] text-white/70">
+          <ul className="space-y-3 text-[0.88rem] text-white/70">
             <li>
               <Link href="/services#marine-logistics" className="hover:text-[#d4af37]">
                 Marine Logistics
@@ -71,6 +71,26 @@ export default function SiteFooter() {
             <li>
               <Link href="/services#hr-solutions" className="hover:text-[#d4af37]">
                 HR Solutions
+              </Link>
+            </li>
+            <li>
+              <Link href="/services#marine-recruitment" className="hover:text-[#d4af37]">
+                Marine Recruitment
+              </Link>
+            </li>
+            <li>
+              <Link href="/services#houseboat-services" className="hover:text-[#d4af37]">
+                Houseboat Services (Training &amp; LSA/FFA)
+              </Link>
+            </li>
+            <li>
+              <Link href="/services#dredging-support" className="hover:text-[#d4af37]">
+                River &amp; Canal Dredging
+              </Link>
+            </li>
+            <li>
+              <Link href="/services#seafarers-insurance" className="hover:text-[#d4af37]">
+                Seafarers Insurance Support
               </Link>
             </li>
             <li>
@@ -128,8 +148,8 @@ export default function SiteFooter() {
             </li>
             <li className="flex gap-3">
               <MailIcon className="mt-0.5 h-5 w-5 text-[#d4af37]" />
-              <a href="mailto:info.jjmarine@gmail.com" className="hover:text-[#d4af37] transition-colors">
-                info.jjmarine@gmail.com
+              <a href="mailto:info.hr@jjmarinelogistics.com" className="hover:text-[#d4af37] transition-colors">
+                info.hr@jjmarinelogistics.com
               </a>
             </li>
             <li className="flex gap-3">

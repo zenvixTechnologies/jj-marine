@@ -9,7 +9,7 @@ import IndustriesSection from "./components/IndustriesSection";
 
 export const metadata = {
   title: "Contact Us | JJ Marine Logistics & HR Solutions Pvt. Ltd.",
-  description: "Get in touch with JJ Marine Logistics & HR Solutions Pvt. Ltd. at our Kuttanad, Alappuzha headquarters or via info.jjmarine@gmail.com.",
+  description: "Get in touch with JJ Marine Logistics & HR Solutions Pvt. Ltd. at our Kuttanad, Alappuzha headquarters or via info.hr@jjmarinelogistics.com.",
   alternates: {
     canonical: "/contact-us",
   },

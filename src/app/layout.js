@@ -91,7 +91,7 @@ const jsonLd = {
       alternateName: ["JJ Marine", "JJ Marine Logistics", "jjmarinelogistics.com"],
       url: siteUrl,
       logo: `${siteUrl}/images/logo.png`,
-      email: "info.jjmarine@gmail.com",
+      email: "info.hr@jjmarinelogistics.com",
       telephone: "+91-9447988100",
       founder: {
         "@type": "Person",

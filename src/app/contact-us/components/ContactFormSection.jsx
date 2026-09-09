@@ -9,7 +9,7 @@ import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
 export default function ContactFormSection() {
   const [fullName, setFullName] = useState("");
   const [organization, setOrganization] = useState("");
-  const [serviceInterest, setServiceInterest] = useState("Crew Management");
+  const [serviceInterest, setServiceInterest] = useState("Shipping");
   const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
@@ -87,10 +87,18 @@ export default function ContactFormSection() {
                   onChange={(e) => setServiceInterest(e.target.value)}
                   className="w-full bg-marine-primary/40 border border-white/20 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-marine-gold focus:border-marine-gold outline-none text-white [&>option]:text-black"
                 >
-                  <option value="Crew Management">Crew Management</option>
-                  <option value="HR Solutions">HR Solutions</option>
-                  <option value="Maritime Training">Maritime Training</option>
-                  <option value="Global Logistics">Global Logistics</option>
+                  <option value="Shipping">Shipping</option>
+                  <option value="Marine & Offshore">Marine &amp; Offshore</option>
+                  <option value="Tourism & Houseboat Assistance">Tourism &amp; Houseboat Assistance</option>
+                  <option value="River & Canal Dredging Support">River &amp; Canal Dredging Support</option>
+                  <option value="Logistics & Transportation">Logistics &amp; Transportation</option>
+                  <option value="Oil & Gas">Oil &amp; Gas</option>
+                  <option value="Construction">Construction</option>
+                  <option value="Hospitality">Hospitality</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Information Technology">Information Technology</option>
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Education">Education</option>
                 </select>
               </div>
 

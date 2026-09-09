@@ -27,7 +27,7 @@ export default function ServicesPage() {
           <TrainingSection />
         </div>
       </main>
-      <WhyPartnersSection />
+      {/* <WhyPartnersSection /> */}
       <SiteFooter />
     </div>
   );

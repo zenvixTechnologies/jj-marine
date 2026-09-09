@@ -8,26 +8,26 @@ import {
   UsersIcon,
 } from "./icons";
 
-const stats = [
-  { icon: UsersIcon, value: "5,000+", label: "Placements", delay: "0s" },
-  { icon: GlobeIcon, value: "120+", label: "Global Partners", delay: "0.5s" },
-  { icon: AnchorIcon, value: "15", label: "Maritime Sectors", delay: "1s" },
-  { icon: VerifiedIcon, value: "98%", label: "Satisfaction", delay: "1.5s" },
+const highlights = [
+  { icon: VerifiedIcon, title: "MLC 2006", label: "Certified Manning", delay: "0s" },
+  { icon: GlobeIcon, title: "Global Fleet", label: "Worldwide Manning", delay: "0.5s" },
+  { icon: AnchorIcon, title: "Leadership", label: "Active Officer Expertise", delay: "1s" },
+  { icon: UsersIcon, title: "End-to-End", label: "Crewing & Logistics", delay: "1.5s" },
 ];
 
-function StatCard({ icon: Icon, value, label, delay }) {
+function HighlightCard({ icon: Icon, title, label, delay }) {
   return (
     <div
-      className="animate-float rounded-[18px] bg-[#dbe1de] p-5 shadow-[0_20px_35px_rgba(0,0,0,0.08)]"
+      className="animate-float rounded-[18px] bg-[#dbe1de] p-5 shadow-[0_20px_35px_rgba(0,0,0,0.08)] backdrop-blur-sm transition-all hover:bg-white"
       style={{ animationDelay: delay }}
     >
-      <div className="mb-4 flex h-8 w-8 items-center justify-center text-marine-gold">
+      <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-marine-primary/10 text-marine-gold">
         <Icon className="h-5 w-5" />
       </div>
-      <div className="font-display text-[1.8rem] font-bold leading-none text-marine-primary">
-        {value}
+      <div className="font-display text-[1.15rem] font-bold leading-snug text-marine-primary">
+        {title}
       </div>
-      <div className="mt-1 text-[0.82rem] font-medium text-marine-text">
+      <div className="mt-1 text-[0.8rem] font-medium leading-tight text-marine-text">
         {label}
       </div>
     </div>
@@ -117,8 +117,8 @@ export default function HeroSection() {
           </div>
 
           <div className="relative z-10 grid w-full grid-cols-2 gap-4 p-3 md:gap-5 md:p-0">
-            {stats.map((stat) => (
-              <StatCard key={stat.label} {...stat} />
+            {highlights.map((item) => (
+              <HighlightCard key={item.title} {...item} />
             ))}
           </div>
         </div>

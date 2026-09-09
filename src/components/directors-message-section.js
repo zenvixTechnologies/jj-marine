@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { Quote, Award, Anchor, Compass, ShieldCheck, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
+import { Quote, Anchor, CheckCircle2, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function DirectorsMessageSection() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -71,29 +71,7 @@ export default function DirectorsMessageSection() {
                   JJ Marine Logistics and HR Solutions
                 </p>
 
-                {/* Highlight Stats / Badges */}
-                <div className="mt-3 space-y-2 border-t border-[#1e6f5c]/40 pt-3">
-                  <div className="flex items-start gap-2 text-[0.75rem] text-gray-300">
-                    <Award className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#d4af37]" />
-                    <span>
-                      <strong className="text-white">Sea Career Since 2013:</strong> Over a decade of maritime experience.
-                    </span>
-                  </div>
 
-                  <div className="flex items-start gap-2 text-[0.75rem] text-gray-300">
-                    <Compass className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#d4af37]" />
-                    <span>
-                      <strong className="text-white">Synergy Marine Group:</strong> Tanker fleet operations since 2018.
-                    </span>
-                  </div>
-
-                  <div className="flex items-start gap-2 text-[0.75rem] text-gray-300">
-                    <ShieldCheck className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[#d4af37]" />
-                    <span>
-                      <strong className="text-white">Global Charterers:</strong> Shell, BP, Sinokor &amp; top standards.
-                    </span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -7,6 +7,10 @@ import {
   SailIcon,
   SchoolIcon,
   UsersIcon,
+  AnchorIcon,
+  VerifiedIcon,
+  PersonIcon,
+  BadgeIcon,
 } from "./icons";
 
 const services = [
@@ -48,6 +52,88 @@ const services = [
       {
         title: "Training Programs",
         text: "Specialized certification and skill-upgrading modules for vessel crew.",
+      },
+    ],
+  },
+  {
+    title: "Marine Recruitment",
+    summary: "End-to-end recruitment and crewing solutions connecting skilled maritime professionals with global fleets.",
+    icon: PersonIcon,
+    iconShell:
+      "bg-gradient-to-r from-marine-gold to-marine-gold-soft text-marine-primary",
+    details: [
+      {
+        title: "Officer & Crew Staffing",
+        text: "Sourcing and deploying qualified Officers, Engineers, and Rating crew for tanker, cargo, and offshore vessels.",
+      },
+      {
+        title: "Vetting & Screening",
+        text: "Comprehensive background verification, competency assessments, and STCW compliance checks.",
+      },
+      {
+        title: "Deployment & Manning",
+        text: "End-to-end travel logistics, visa documentation, and flag state endorsement processing.",
+      },
+    ],
+  },
+  {
+    title: "Houseboat Services",
+    summary: "Comprehensive houseboat training, vessel inspection, and certified LSA/FFA safety equipment maintenance.",
+    icon: AnchorIcon,
+    iconShell: "bg-marine-primary text-marine-gold",
+    details: [
+      {
+        title: "Crew & Operator Training",
+        text: "Specialized navigation, safety management, and operational training for houseboat operators.",
+      },
+      {
+        title: "Vessel Inspection",
+        text: "Thorough seaworthiness inspections, hull surveys, and safety compliance audits for inland water vessels.",
+      },
+      {
+        title: "LSA & FFA Support",
+        text: "Supply, inspection, certification, and servicing of Life Saving Appliances (LSA) and Fire Fighting Appliances (FFA).",
+      },
+    ],
+  },
+  {
+    title: "River & Canal Dredging Support",
+    summary: "Technical and operational assistance for inland waterway dredging, silt management, and channel navigation.",
+    icon: SailIcon,
+    iconShell:
+      "bg-gradient-to-r from-marine-gold to-marine-gold-soft text-marine-primary",
+    details: [
+      {
+        title: "Channel Dredging Support",
+        text: "Strategic logistics and equipment coordination for river and canal desilting and deepening projects.",
+      },
+      {
+        title: "Waterway Operations",
+        text: "Hydrographic survey support, navigational safety mapping, and route clearance for inland logistics.",
+      },
+      {
+        title: "Equipment & Crewing",
+        text: "Providing specialized machinery operators, dredger crew, and technical support for dredging operations.",
+      },
+    ],
+  },
+  {
+    title: "Seafarers Insurance Support",
+    summary: "Dedicated insurance advisory, policy coverage, and claim assistance tailored for marine crew and offshore personnel.",
+    icon: VerifiedIcon,
+    iconShell: "bg-marine-primary text-marine-gold",
+    details: [
+      {
+        title: "Maritime Health & Medical",
+        text: "Comprehensive medical, accident, and illness coverage designed specifically for active seafarers.",
+      },
+      {
+        title: "P&I & Liability Coverage",
+        text: "Expert guidance on Protection & Indemnity (P&I) policies and vessel crew liability management.",
+      },
+      {
+        title: "Claims Assistance",
+        text: "Fast-track claim processing, emergency repatriation coverage, and family beneficiary support.",
       },
     ],
   },
@@ -118,7 +204,7 @@ function ServiceCard({ service, isOpen, onToggle }) {
       <div
         className="overflow-hidden transition-[max-height,opacity] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]"
         style={{
-          maxHeight: isOpen ? "28rem" : "0px",
+          maxHeight: isOpen ? "35rem" : "0px",
           opacity: isOpen ? 1 : 0,
         }}
       >

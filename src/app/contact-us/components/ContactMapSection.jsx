@@ -63,8 +63,8 @@ export default function ContactMapSection() {
                 <div>
                   <h4 className="font-bold text-marine-primary text-base">Email Inquiries</h4>
                   <p className="text-sm leading-relaxed text-marine-text">
-                    <a href="mailto:info.jjmarine@gmail.com" className="hover:text-marine-gold transition-colors">
-                      info.jjmarine@gmail.com
+                    <a href="mailto:info.hr@jjmarinelogistics.com" className="hover:text-marine-gold transition-colors">
+                      info.hr@jjmarinelogistics.com
                     </a>
                   </p>
                 </div>
